@@ -1,0 +1,467 @@
+---
+title: "sub_network"
+author: "Changchao Li"
+date: "2021/12/14"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+
+network_construct <- function(otu_table,threads){ 
+ library(foreach)  
+ library(doParallel)  
+ library(abind)
+
+otu_table2 <- apply(otu_table,2,rank)  
+
+r <- function(rx,ry){  
+    n <- length(rx)  
+    lxy <- sum((rx-mean(rx))*(ry-mean(ry)))  
+    lxx <- sum((rx-mean(rx))^2)  
+    lyy <- sum((ry-mean(ry))^2) 
+    r <- lxy/sqrt(lxx*lyy)   
+    t <- (r * sqrt(n - 2))/sqrt(1 - r^2)   
+    p <- -2 * expm1(pt(abs(t), (n - 2), log.p = TRUE))  
+   return(c(r,p))  
+  }  
+
+arraybind <- function(...){abind(...,along = 3,force.array=TRUE)} 
+
+nc <- ncol(otu_table) 
+
+registerDoParallel(cores = threads)  
+
+corr <- foreach (i = 1:nc,.combine = "arraybind") %dopar%{   
+    corr1 <- matrix(rep(0,2*nc),nrow = 2,ncol=nc)   
+    for(j in 1:nc) {     
+       if(j > i) corr1[,j] <- r(otu_table2[,i],otu_table2[,j])  
+    }   
+      corr <- corr1}  
+
+rr <- corr[1,,] 
+rr <- rr+t(rr)  
+diag(rr) <- 1 
+pp <- corr[2,,] 
+lp <- lower.tri(pp) 
+pa <- pp[lp]  
+pa <- p.adjust(pa, "BH")  
+pp[lower.tri(pp, diag = FALSE)] <- pa  
+pp <- pp+t(pp)  
+rownames(pp) <- colnames(otu_table) 
+colnames(pp) <- colnames(otu_table)  
+rownames(rr) <- colnames(otu_table) 
+colnames(rr) <- colnames(otu_table)  
+return(list(r = rr,p = pp))
+}
+```
+
+
+
+```{r}
+
+FW <- read.csv("genus_seawater_plastisphere.csv", header = T, row.names = 1)
+
+FW = t(FW)
+
+set.seed(66)
+FWS <- sample(nrow(FW), 100, replace = FALSE, prob = NULL)
+
+FW6 <- FW[FWS , ]
+
+dim(FW6)
+
+FW6 = t(FW6)
+
+dim(FW6)
+
+
+tmp <- FW6
+
+tmp[tmp != 0] = 1
+
+f1 <- which(rowSums(tmp) >= 10)
+
+x6 <- FW6[f1, ]
+
+dim(x6)
+
+x66 = t(x6)
+
+write.csv(x66, "seawater_plastisphere_100samples_and_10%occurring.csv", quote = F)
+
+
+
+```
+
+
+```{r}
+
+
+
+otu <- read.csv("seawater_plastisphere_100samples_and_10%occurring.csv", row.names = 1)
+
+
+res <- network_construct(otu, 8)
+
+
+```
+
+
+
+```{r}
+
+library(igraph)
+
+
+occor.r <- res$r
+
+occor.p= res$p
+
+occor.r[occor.p>0.05|abs(occor.r)<0.6] = 0 
+
+occor.r[occor.r!=0] = 1
+
+igraph = graph_from_adjacency_matrix(occor.r,mode="undirected",
+                                     weighted=NULL,diag=FALSE)
+
+
+
+igraph
+
+
+bad.vs = V(igraph)[degree(igraph) == 0]
+
+igraph = delete.vertices(igraph, bad.vs)
+
+igraph
+
+
+
+igraph.weight = E(igraph)$weight
+
+
+E(igraph)$weight = NA
+
+
+set.seed(666)
+plot(igraph,main="Co-occurrence network",vertex.frame.color=NA,vertex.label=NA,edge.width=1,
+ vertex.size=5,edge.lty=1,edge.curved=TRUE,margin=c(0,0,0,0))
+
+```
+
+
+
+
+
+
+# 网络属性
+```{r}
+
+num.edges = length(E(igraph)) 
+num.edges
+
+
+num.vertices = length(V(igraph))
+num.vertices
+
+
+connectance = edge_density(igraph,loops=FALSE)
+connectance
+
+
+average.degree = mean(igraph::degree(igraph))
+average.degree
+
+
+average.path.length = average.path.length(igraph) 
+average.path.length
+
+
+
+
+#写进数据集
+network_index <- data.frame(num.edges,
+                           num.vertices,
+                           connectance,
+                           average.degree,
+                           average.path.length)
+
+
+write.csv(network_index, "network_index.csv", quote = F)
+
+```
+
+
+
+
+
+
+
+# node attribute
+```{r}
+
+  # 节点度
+
+  V(igraph)$degree <- degree(igraph)
+
+  # 节点度中心性
+
+  igraph.cen.degree <- round(centralization.degree(igraph)$res,3)
+
+  # 节点介数中心性
+
+  igraph.betweenness <- round(centralization.betweenness(igraph)$res,3)
+
+  # 节点中心性
+
+  igraph.closeness <- round(centralization.closeness(igraph)$res,3)
+
+  
+  # 模块性 modularity
+  fc = cluster_fast_greedy(igraph,weights =NULL)
+  
+  modularity = modularity(igraph,membership(fc))
+  
+  # 按照模块为节点配色
+  V(igraph)$no.module = membership(fc)
+
+  
+  
+  nodes_list <- data.frame(nodes_id = V(igraph)$name,
+                           degree = V(igraph)$degree,
+                           no.module = V(igraph)$no.module,
+                            modularity,
+                           igraph.cen.degree, 
+                           igraph.betweenness,
+                           igraph.closeness)
+
+  
+  
+  head(nodes_list)    
+ 
+
+  
+  
+  write.table(nodes_list, 'nodes_list.txt', sep = '\t', 
+              row.names = FALSE, quote = FALSE)
+  
+  
+ write.csv(nodes_list, 'nodes_list.csv', row.names = FALSE, quote = FALSE)
+
+
+```
+
+
+
+```{r}
+
+net <- res$r
+
+net[net >= 0.6] = 1
+
+net[net <= -0.6] = 1
+
+net[net > -0.6 & net < 0.6] = 0
+
+net6 <- net[nodes_list$nodes_id, ]
+
+dim(net6)
+
+net66 <- net6[, nodes_list$nodes_id]
+
+dim(net66)
+
+sum(net66)
+
+write.table(net66,"adjacency_unweight.txt",sep="\t",quote=F,col.names=NA)
+write.csv(net66, "SP_adjacency_matrix.csv", quote = F, col.names = NA)
+
+```
+
+
+
+```{r}
+
+library(reshape2)
+
+res$r[lower.tri(res$r)] = 0
+
+res$p[lower.tri(res$p)] = 0
+
+data.r <- melt(res$r)
+
+data.p <- melt(res$p)
+
+result <- cbind(data.r,data.p)
+
+result <- result[,c(1,2,3,6)]
+
+
+colnames(result) <- c("Source","Target","R","P")
+
+
+result.1 <- result[result$R > 0.6,]
+
+result.2 <- result[result$R < -0.6,]
+
+result <- rbind(result.1,result.2)
+
+result <- result[result$P < 0.05,]
+
+head(result)
+
+result<- result[result$R < 1,]
+
+result <- result[result$Source != result$Target,]
+
+write.csv(result,"correlation.csv", quote=F,col.names=NA, row.names = F)
+
+```
+
+
+
+
+
+### 计算节点度的幂律分布
+
+```{r}
+
+adjacency_unweight <- read.delim('adjacency_unweight.txt', row.names = 1, sep = '\t', check.names = FALSE)
+
+
+
+igraph <- graph_from_adjacency_matrix(as.matrix(adjacency_unweight), mode = 'undirected', weighted = NULL, diag = FALSE)
+igraph    
+ 
+
+
+V(igraph)$degree <- degree(igraph)
+head(V(igraph)$degree)
+ 
+
+
+degree_dist <- table(V(igraph)$degree)
+degree_num <- as.numeric(names(degree_dist))
+degree_count <- as.numeric(degree_dist)
+ 
+dat <- data.frame(degree = degree_num, count = degree_count)
+head(dat)
+
+write.csv(dat, "degree_frequency.csv", quote = F)
+ 
+
+
+par(mfrow = c(1, 3))
+hist(V(igraph)$degree, xlab = 'Degree', ylab = 'Frequency',
+    main = 'Degree distribution')
+plot(degree_count, degree_num, xlab = 'Degree', ylab = 'Count',
+    main = 'Degree distribution')
+plot(degree_count, degree_num, log = 'xy', xlab = 'Log-degree',
+    ylab = 'Log-count', main = 'Log-log degree distribution')
+
+
+```
+
+
+
+```{r}
+
+mod <- nls(count ~ a*degree^b, data = dat, start = list(a = 1, b = 1.5))
+summary(mod)
+
+
+
+a <- round(coef(mod)[1], 3)
+b <- round(coef(mod)[2], 3)
+a; b
+
+
+fit <- fitted(mod)
+
+SSre <- sum((dat$count-fit)^2)
+
+SStot <- sum((dat$count-mean(dat$count))^2)
+
+R2 <- round(1 - SSre/SStot, 3)
+
+R2
+
+
+p_num <- 1
+
+dat_rand <- dat
+
+for (i in 1:999) {
+    dat_rand$count <- sample(dat_rand$count)
+    SSre_rand <- sum((dat_rand$count-fit)^2)
+    SStot_rand <- sum((dat_rand$count-mean(dat_rand$count))^2)
+    R2_rand <- 1 - SSre_rand/SStot_rand
+    if (R2_rand > R2) p_num <- p_num + 1
+}
+
+
+p_value <- p_num / (999+1)
+
+p_value
+
+```
+
+
+
+
+```{r}
+
+library(ggplot2)
+library(ggsci)
+ 
+p_nonscale <- ggplot(dat, aes(x = degree, y = count)) +
+  
+  geom_point(size = 2, shape = 19, color = pal_lancet()(1), alpha = 0.8) +
+  
+  
+  theme_minimal() +
+  
+  stat_smooth(method = 'nls', formula = y ~ a*x^b, 
+              method.args = list(start = list(a = 1, b = 1.5)), se = FALSE) +
+  
+  labs(x = 'Degree', y = 'Count')
+ 
+
+p_nonscale
+
+
+label <- data.frame(formula = sprintf('italic(Y) == %.3f*italic(X)^%.3f', a, b),
+    R2 = sprintf('italic(R^2) == %.3f', R2),
+    p_value = sprintf('italic(P) < %.3f', p_value))
+ 
+
+
+p_nonscale6 <- p_nonscale + geom_text(x = 12, y = 45, aes(label = formula), 
+                                      data = label, parse = TRUE, hjust = 0) +
+  
+  geom_text(x = 12, y = 35, aes(label = R2), data = label, parse = TRUE, hjust = 0) +
+  
+  geom_text(x = 12, y = 25, aes(label = p_value), data = label, parse = TRUE, hjust = 0)
+
+
+
+p_nonscale6
+
+ggsave(plot = p_nonscale6, "power-law_distribution.pdf", width = 106, height = 76, units = "mm")
+
+```
+
+
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
