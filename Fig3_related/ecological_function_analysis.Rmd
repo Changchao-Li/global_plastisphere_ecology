@@ -1,0 +1,201 @@
+---
+title: "ecological_function_analysis"
+author: "Changchao Li"
+date: "2023-05-15"
+output: html_document
+---
+
+```{r}
+
+library(ggplot2)
+library(ggpmisc)
+library(ggsci)
+library(reshape)
+library(ggpubr)
+library(rstatix)
+
+```
+
+
+
+#### 筛选出不同生态系统中的plastisphere和environmental funs
+```{r}
+
+funs <- read.csv("functions.csv", header = T, row.names = 1)
+metadata <- read.csv("metadata_win.csv", header = T, row.names = 1)
+
+#1. seawater funs
+metadata_seawater <- subset(metadata, Ecosystem %in% c("seawater") )
+funs_seawater <- funs[rownames(metadata_seawater), ]
+write.csv(funs_seawater, "funs_seawater.csv", quote = F)
+write.csv(metadata_seawater, "metadata_seawater.csv", quote = F)
+nrow(funs_seawater)
+nrow(metadata_seawater)
+
+
+#2. freshwater funs
+metadata_freshwater <- subset(metadata, Ecosystem %in% c("freshwater") )
+funs_freshwater <- funs[rownames(metadata_freshwater), ]
+write.csv(funs_freshwater, "funs_freshwater.csv", quote = F)
+write.csv(metadata_freshwater, "metadata_freshwater.csv", quote = F)
+nrow(funs_freshwater)
+nrow(metadata_freshwater)
+
+
+#3. seawater funs
+metadata_terrestrial <- subset(metadata, Ecosystem %in% c("terrestrial") )
+funs_terrestrial <- funs[rownames(metadata_terrestrial), ]
+write.csv(funs_terrestrial, "funs_terrestrial.csv", quote = F)
+write.csv(metadata_terrestrial, "metadata_terrestrial.csv", quote = F)
+nrow(funs_terrestrial)
+nrow(metadata_terrestrial)
+
+```
+
+
+## get compare results---freshwater
+```{r}
+
+mydata1 <- read.csv("funs_freshwater.csv")
+
+group <- read.csv("metadata_freshwater.csv")
+
+dat = as.data.frame(melt(mydata1, id.vars=c("sample")))
+
+dat$group <- group$group2
+
+df <- dat %>% group_by(variable) %>% pairwise_wilcox_test(value ~ group, detailed = T)
+
+df[which(df$p < 0.05& df$estimate>0),'level'] <- 'depleted'
+df[which(df$p < 0.05& df$estimate<0),'level'] <- 'enriched'
+df[which(df$p >=0.05),'level'] <- 'ns'
+
+write.csv(df, "freshwater_fun_compare.csv", quote = F, row.names = F)
+
+```
+
+
+## get compare results---seawater
+```{r}
+
+mydata1 <- read.csv("funs_seawater.csv")
+
+group <- read.csv("metadata_seawater.csv")
+
+dat = as.data.frame(melt(mydata1, id.vars=c("sample")))
+
+dat$group <- group$group2
+
+df <- dat %>% group_by(variable) %>% pairwise_wilcox_test(value ~ group, detailed = T)
+
+df[which(df$p < 0.05& df$estimate>0),'level'] <- 'depleted'
+df[which(df$p < 0.05& df$estimate<0),'level'] <- 'enriched'
+df[which(df$p >=0.05),'level'] <- 'ns'
+
+write.csv(df, "seawater_fun_compare.csv", quote = F, row.names = F)
+
+```
+
+
+
+## get compare results---terrestrial
+```{r}
+
+mydata1 <- read.csv("funs_terrestrial.csv")
+
+group <- read.csv("metadata_terrestrial.csv")
+
+dat = as.data.frame(melt(mydata1, id.vars=c("sample")))
+
+dat$group <- group$group2
+
+df <- dat %>% group_by(variable) %>% pairwise_wilcox_test(value ~ group, detailed = T)
+
+df[which(df$p < 0.05& df$estimate>0),'level'] <- 'depleted'
+df[which(df$p < 0.05& df$estimate<0),'level'] <- 'enriched'
+df[which(df$p >=0.05),'level'] <- 'ns'
+
+write.csv(df, "terrestrial_fun_compare.csv", quote = F, row.names = F)
+
+```
+
+
+
+
+
+```{r}
+
+lccol3 =c("#377EB8", "#999999", "#E41A1C")
+
+diff=read.csv("function_difference.csv", header=T) 
+
+head(diff)
+
+##固定x轴顺序
+order_list <- c("denitrification", "nitrate_denitrification", "nitrate_reduction", "nitrate_respiration",
+                "nitrite_denitrification","nitrite_respiration","nitrogen_respiration",
+                "nitrous_oxide_denitrification","nitrification","ligninolysis","fermentation",
+                "oil_bioremediation","aliphatic_non_methane_hydrocarbon_degradation",
+                "aromatic_compound_degradation","aromatic_hydrocarbon_degradation","hydrocarbon_degradation",
+                "plastic_degradation","POPs_degradation")
+
+diff$variable <- factor(diff$variable, levels = rev(order_list))
+
+```
+
+
+##散点图
+```{r}
+
+p2 <- ggplot(diff,aes(variable, estimate)) +
+  
+  # geom_rect(xmin = 0.5, xmax = 9.5, ymin = -Inf, ymax = Inf, fill = "#E3AC56", alpha = 0.05) +  # 
+  # geom_rect(xmin = 9.5, xmax = 18.5, ymin = -Inf, ymax = Inf, fill = "#C94167", alpha = 0.05) +
+  # scale_x_continuous(limits = c(0.5, 18.5), expand = c(0, 0)) +
+  
+  xlab("") +
+  
+  ylab("Difference (%)") +
+  
+  theme(panel.background=element_rect(fill='transparent'),
+          panel.grid=element_blank(),
+          # axis.text.y = element_blank(),
+          legend.position="none",
+          axis.line.y=element_blank(),
+          axis.ticks.y=element_blank(),
+          plot.title=element_text(size=8,face="bold",colour="black",hjust=0.5)) +
+  
+  scale_x_discrete(limits=levels(diff$variable)) +
+  
+  coord_flip()
+
+
+
+for (i in 1:17) 
+    p2 <- p2 + annotate('rect', xmin=i+0.5, xmax=i+1.5, ymin=-Inf, ymax=Inf, 
+                        fill=ifelse(i %% 2 == 0, 'white', 'gray95'))
+
+
+p2 <- p2 +  geom_errorbar(aes(ymin=conf.low, ymax=conf.high, color = level), 
+                          position=position_dodge(0.8), width=0, size= 0.6) +
+  
+  geom_point(aes(color = level), shape= 19, size=2.6) +
+  
+  geom_text(aes(variable, y = conf.low + 0.5, label = p.adj.signif, color = level), show.legend = F)+
+
+  
+  scale_color_manual(values= lccol3, limits = c("depleted", "ns", "enriched")) +
+  
+  geom_hline(aes(yintercept=0), linetype='dashed', color='black') +
+
+  facet_wrap(type~ecosystem, scales = "free_x", ncol = 3)
+  
+  
+
+p2
+
+# ggsave(plot = p2, "function.pdf", width = 216, height =500, units = c("mm"), dpi = 300)
+
+```
+
+

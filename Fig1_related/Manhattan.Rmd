@@ -1,0 +1,332 @@
+---
+title: "Manhattan"
+author: "Changchao Li"
+date: '2022-08-22'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+```{r}
+library(ggplot2)
+library(ggsci)
+library(dplyr)
+
+
+```
+
+
+
+
+```{r}
+
+genus = read.delim("genus_name.txt", row.names= 1,header= T, sep="\t")
+
+taxonomy = read.delim("taxonomy.txt", row.names= 1,header= T, sep="\t")
+
+## 去掉重复的genus的行
+tax <- taxonomy %>% distinct(Genus, .keep_all = TRUE)
+
+dim(tax)
+
+idx = tax$Phylum == "Proteobacteria"
+
+# 初始化full为门，并初化因子为字符方便修改
+tax$full=as.character(tax$Phylum) 
+
+# 修改Proteobacteria门为目
+tax[idx,]$full=as.character(tax[idx,]$Class)
+
+
+top_phylum=c("Alphaproteobacteria","Betaproteobacteria", "Gammaproteobacteria", "Acidobacteria", 
+              "Actinobacteria", "Bacteroidetes", "Firmicutes", "Planctomycetes",
+              "Verrucomicrobia")
+
+tax[!(tax$full %in% top_phylum),]$full = "Low Abundance"
+
+# write.table(tax, "tax_genus.txt", quote = F, sep = "\t")
+```
+
+
+
+```{r}
+taxonomy = read.delim("tax_genus.txt", row.names= 1,header= F, sep="\t")
+
+colnames(taxonomy) = c("kingdom","phylum","class","order","family", "full")
+
+
+
+```
+
+
+
+```{r}
+
+x = read.delim("fwp-fwe.txt", row.names= 1,header=T, sep="\t")
+
+# 标记差异OTU类型
+x$level = x$level
+x$otu = rownames(x)
+
+
+# 转换Pvalue为负对数
+x$neglogp = -log10(x$PValue)
+
+# Taxonomy排序，并筛选OTU表中存在的
+taxonomy$id=rownames(taxonomy)
+taxonomy = arrange(taxonomy, phylum, class, order, family, full)
+rownames(taxonomy) = taxonomy$id
+idx = rownames(taxonomy) %in% x$otu
+tax = taxonomy[idx, ] # subset taxonomy from used OTU
+
+# 手动筛选显著的组
+x = x[rownames(tax), ] # reorder according to tax
+x$tax = gsub("p__","",tax$full,perl=TRUE) 
+
+# write.csv(x, "fw.csv", quote = F)
+
+```
+
+
+
+
+```{r}
+
+fw <- read.csv("fw.csv")
+
+# 设置各类的level对应顺序
+
+levels(fw$tax)= c("Alphaproteobacteria","Betaproteobacteria","Gammaproteobacteria", 
+                  "Acidobacteria", "Actinobacteria","Bacteroidetes", "Firmicutes", 
+                  "Planctomycetes", "Verrucomicrobia", "ZLow_abundance")
+
+
+fw$otu = factor(fw$otu, levels=fw$otu)   # set x order
+
+
+# 调整Y轴范围更美观
+fw[fw$neglogp > 16,]$neglogp  = 16
+
+
+## 添加显著阈值线
+
+FDR = min(fw$neglogp[fw$level=="Depleted"])
+
+col <- c(pal_npg()(9), "lightgrey")
+
+p1 = ggplot(fw, aes(x=otu, y=neglogp, color=tax, shape=level, size = level)) +
+  
+  scale_color_manual(values = col, limits = c("Alphaproteobacteria","Betaproteobacteria",
+                                            "Gammaproteobacteria", "Acidobacteria", 
+                                            "Actinobacteria", "Bacteroidetes", "Firmicutes",
+                                            "Planctomycetes", "Verrucomicrobia", "ZLow Abundance")) +
+  
+  geom_point(alpha= 0.6) + 
+  
+  scale_size_manual(values = c(3,3,3)) + 
+  
+  geom_hline(size=0.6, yintercept=FDR, linetype=2, color="#333333") +
+  
+  scale_shape_manual(values=c(25, 17, 21))+
+  
+  labs(x="OTU", y="-log10(P)") +
+  
+  theme_classic() + 
+  
+  theme(axis.text.x=element_blank(),
+        panel.grid = element_blank(),
+        legend.position="top")
+
+p1
+
+```
+
+
+
+```{r}
+
+
+x = read.delim("swp-swe.txt", row.names= 1,header=T, sep="\t")
+
+# 标记差异OTU类型
+x$level = x$level
+x$otu = rownames(x)
+
+
+# 转换Pvalue为负对数
+x$neglogp = -log10(x$PValue)
+
+# Taxonomy排序，并筛选OTU表中存在的
+taxonomy$id=rownames(taxonomy)
+taxonomy = arrange(taxonomy, phylum, class, order, family, full)
+rownames(taxonomy) = taxonomy$id
+idx = rownames(taxonomy) %in% x$otu
+tax = taxonomy[idx, ] # subset taxonomy from used OTU
+
+# 手动筛选显著的组
+x = x[rownames(tax), ] # reorder according to tax
+x$tax = gsub("p__","",tax$full,perl=TRUE) 
+
+
+# write.csv(x, "sw.csv", quote = F)
+
+```
+
+
+```{r}
+sw <- read.csv("sw.csv")
+
+# 设置各类的level对应顺序
+
+levels(sw$tax)= c("Alphaproteobacteria","Betaproteobacteria","Gammaproteobacteria", 
+                  "Acidobacteria", "Actinobacteria","Bacteroidetes", "Firmicutes", 
+                  "Planctomycetes", "Verrucomicrobia", "ZLow_abundance")
+
+sw$otu = factor(sw$otu, levels=sw$otu)   # set x order
+
+
+# 调整Y轴范围更美观
+sw[sw$neglogp > 20,]$neglogp  = 20
+ 
+
+# Manhattan plot
+## 添加显著阈值线
+
+FDR = min(sw$neglogp[sw$level=="Depleted"])
+
+col <- c(pal_npg()(9), "lightgrey")
+
+p2 = ggplot(sw, aes(x=otu, y=neglogp, color=tax, shape=level, size = level)) +
+  
+  scale_color_manual(values = col, limit = c("Alphaproteobacteria","Betaproteobacteria",
+                                            "Gammaproteobacteria", "Acidobacteria", 
+                                            "Actinobacteria", "Bacteroidetes", "Firmicutes",
+                                            "Planctomycetes", "Verrucomicrobia", "ZLow Abundance")) +
+  
+  geom_point(alpha= 0.6) + 
+  
+  scale_size_manual(values = c(3,3,3)) + 
+  
+  geom_hline(size=0.6, yintercept=FDR, linetype=2, color="#333333") +
+  
+  scale_shape_manual(values=c(25, 17, 21))+
+  
+  labs(x="OTU", y="-log10(P)") +
+  
+  theme_classic() + 
+  
+  theme(axis.text.x=element_blank(),
+        panel.grid = element_blank(),
+        legend.position="top")
+
+p2
+
+
+```
+
+```{r}
+
+x = read.delim("tep-tee.txt", row.names= 1,header=T, sep="\t")
+
+# 标记差异OTU类型
+x$level = x$level
+x$otu = rownames(x)
+
+
+# 转换Pvalue为负对数
+x$neglogp = -log10(x$PValue)
+
+# Taxonomy排序，并筛选OTU表中存在的
+taxonomy$id=rownames(taxonomy)
+taxonomy = arrange(taxonomy, phylum, class, order, family, full)
+rownames(taxonomy) = taxonomy$id
+idx = rownames(taxonomy) %in% x$otu
+tax = taxonomy[idx, ] # subset taxonomy from used OTU
+
+# 手动筛选显著的组
+x = x[rownames(tax), ] # reorder according to tax
+x$tax = gsub("p__","",tax$full,perl=TRUE) 
+
+
+# write.csv(x, "te.csv", quote = F)
+```
+
+
+
+
+```{r}
+
+te <- read.csv("te.csv")
+
+# 设置各类的level对应顺序
+
+levels(te$tax)= c("Alphaproteobacteria","Betaproteobacteria","Gammaproteobacteria", 
+                  "Acidobacteria", "Actinobacteria","Bacteroidetes", "Firmicutes", 
+                  "Planctomycetes", "Verrucomicrobia", "ZLow_abundance")
+
+te$otu = factor(te$otu, levels=te$otu)   # set x order
+
+
+# 调整Y轴范围更美观
+ te[te$neglogp > 20,]$neglogp  = 20
+
+
+## 添加显著阈值线
+FDR = min(te$neglogp[te$level=="Depleted"])
+
+
+
+col <- c(pal_npg()(9), "lightgrey")
+
+p3 = ggplot(te, aes(x=otu, y=neglogp, color=tax, shape=level, size = level)) +
+  
+  scale_color_manual(values = col, limit = c("Alphaproteobacteria","Betaproteobacteria",
+                                            "Gammaproteobacteria", "Acidobacteria", 
+                                            "Actinobacteria", "Bacteroidetes", "Firmicutes",
+                                            "Planctomycetes", "Verrucomicrobia", "ZLow Abundance")) +
+  
+  geom_point(alpha= 0.6) + 
+  
+  scale_size_manual(values = c(3,3,3)) + 
+  
+  geom_hline(size=0.6, yintercept=FDR, linetype=2, color="#333333") +
+  
+  scale_shape_manual(values=c(25, 17, 21))+
+  
+  labs(x="OTU", y="-log10(P)") +
+  
+  theme_classic() + 
+  
+  theme(axis.text.x=element_blank(),
+        panel.grid = element_blank(),
+        legend.position="top")
+
+p3
+
+
+```
+
+```{r}
+
+library(cowplot)
+
+pa1 <- plot_grid(p1, p2, p3, nrow = 3, 
+                 
+                 labels = letters[1:3])
+
+pa1
+
+
+# save plots
+
+ggsave(plot = pa1, "manhattan.pdf", 
+       width = 186, height = 260, units = c("mm"), dpi = 300)
+
+```
+
+
+
+

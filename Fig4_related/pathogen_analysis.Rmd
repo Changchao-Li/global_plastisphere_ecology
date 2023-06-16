@@ -1,0 +1,379 @@
+---
+title: "circlize plot"
+author: "Changchao Li"
+date: "2023-05-13"
+output: html_document
+---
+
+
+```{r}
+
+library(tidyverse)
+library(circlize)
+library(stringr)
+library(dendextend)
+library(ComplexHeatmap)
+library(scales)
+library(ggsci)
+
+```
+
+
+
+#读取数据
+```{r}
+
+da <- read.csv("pathogen_annotation.csv") 
+
+```
+
+
+
+# 最外圈的分组
+```{r}
+
+da$type <- factor(da$type, levels = c("Animal", "Plant", "Zoonotic"))
+
+# 使用table函数统计各字符的出现次数
+counts <- table(da$type)
+
+# 将结果转换为数据框
+type_count <- as.data.frame(counts)
+
+type_count$min <- 0
+
+# 调整列的顺序
+type_count <- type_count[, c("Var1", "min", "Freq")]
+
+
+type_color <- c("#CC5E3A", "#5070A3", "#594F8A")  #定义分组颜色
+
+```
+
+
+
+```{r}
+# freshwater_plastisphere_unique
+fwp_unique <- da[, c("type", "Start", "End", "freshwater_plastisphere_unique")]
+
+fwp_unique <-list(fwp_unique[fwp_unique$freshwater_plastisphere_unique=="1",])
+
+
+# freshwater_plastisphere_enriched
+fwp_enriched  <- da[, c("type", "Start", "End", "freshwater_plastisphere_enriched", "freshwater_level")]
+
+fwp_enriched  <-list(fwp_enriched[fwp_enriched$freshwater_level=="enriched",],
+                     fwp_enriched[fwp_enriched$freshwater_level=="depleted",])
+
+
+# # fwp_mean
+# fwp_mean <- da[, c("type", "Start", "End", "fwp_mean")]
+# 
+# # fwemean
+# fwe_mean <- da[, c("type", "Start", "End", "fwe_mean")]
+
+
+# fwp_mean - fwe_mean
+fw_mean_diff <- da[, c("type", "Start", "End", "fw_mean_difference")]
+
+fw_mean_diff <- list(fw_mean_diff[fw_mean_diff$fw_mean_difference>0, ],
+                     fw_mean_diff[fw_mean_diff$fw_mean_difference<0, ])
+
+```
+
+
+
+
+
+```{r}
+# seawater_plastisphere_unique
+swp_unique <- da[, c("type", "Start", "End", "seawater_plastisphere_unique")]
+
+swp_unique <-list(swp_unique[swp_unique$seawater_plastisphere_unique=="1",])
+
+
+# seawater_plastisphere_enriched
+swp_enriched <- da[, c("type", "Start", "End", "seawater_plastisphere_enriched", "seawater_level")]
+
+swp_enriched <-list(swp_enriched[swp_enriched$seawater_level=="enriched",],
+                    swp_enriched[swp_enriched$seawater_level=="depleted",])
+
+# # swp_mean
+# swp_mean <- da[, c("type", "Start", "End", "swp_mean")]
+# 
+# # swe_mean
+# swe_mean <- da[, c("type", "Start", "End", "swe_mean")]
+
+
+# swp_mean - swe_mean
+sw_mean_diff <- da[, c("type", "Start", "End", "sw_mean_difference")]
+
+sw_mean_diff <- list(sw_mean_diff[sw_mean_diff$sw_mean_difference>0, ],
+                     sw_mean_diff[sw_mean_diff$sw_mean_difference<0, ])
+
+```
+
+
+
+
+```{r}
+
+# terrestrial_plastisphere_unique
+trp_unique <- da[, c("type", "Start", "End", "terrestrial_plastisphere_unique")]
+
+trp_unique <-list(trp_unique[trp_unique$terrestrial_plastisphere_unique=="1",])
+
+
+# terrestrial_plastisphere_enriched
+trp_enriched <- da[, c("type", "Start", "End", "terrestrial_plastisphere_enriched", "terrestrial_level")]
+
+trp_enriched <-list(trp_enriched[trp_enriched$terrestrial_level=="enriched",],
+                trp_enriched[trp_enriched$terrestrial_level=="depleted",])
+
+# # trp_mean
+# trp_mean <- da[, c("type", "Start", "End", "trp_mean")]
+# 
+# # tre_mean
+# tre_mean <- da[, c("type", "Start", "End", "tre_mean")]
+
+# trp_mean - tre_mean
+tr_mean_diff <- da[, c("type", "Start", "End", "tr_mean_difference")]
+
+tr_mean_diff <- list(tr_mean_diff[tr_mean_diff$tr_mean_difference>0, ],
+                     tr_mean_diff[tr_mean_diff$tr_mean_difference<0, ])
+
+```
+
+
+
+
+
+```{r}
+
+circos.clear()
+pdf(str_c('pathogens_circlize.pdf'), width = 8, height = 8)
+circle_size = unit(1, 'snpc')
+
+circos.par(track.height = 0, cell.padding = c(0,0,0,0), track.margin = c(0.01,0.01), gap.degree =c(30,2,2), start.degree = -115)
+circos.genomicInitialize(type_count, plotType = NULL, major.by = 1) 
+
+circos.track(
+    ylim = c(0, 1), track.height = 0.016, bg.border = NA, bg.col = type_color,  #圈图的高度、颜色等设置
+    panel.fun = function(x, y) {
+        ylim = get.cell.meta.data('ycenter')  #ylim、xlim 用于指定 ko id 文字标签添加的合适坐标
+        xlim = get.cell.meta.data('xcenter')
+        sector.name = get.cell.meta.data('sector.index')  #sector.name 用于提取 ko id 名称
+        # circos.axis(h = 'top', labels.cex = 0.4, major.tick.length = 0.4, labels.niceFacing = FALSE)  #绘制外周的刻度线
+        circos.text(xlim, ylim, sector.name, cex = 0.5, niceFacing = FALSE)  #将 ko id 文字标签添加在图中指定位置处
+    } )
+
+
+
+## 绘制freshwater_plastisphere_unique
+circos.genomicTrackPlotRegion(fwp_unique, track.height = 0.02,ylim = c(0,2), bg.border = NA,
+                              bg.col=NA,
+                              panel.fun = function(region, value, ...){
+                                i=getI(...)
+                                if(i == 1){
+                              circos.genomicPoints(region, value, col = "#666666", pch = 19, cex = 0.5,
+                                                   ybottom = 0, ytop.column = 2)}
+                                })
+
+
+
+## 绘制freshwater_plastisphere_enriched
+circos.genomicTrackPlotRegion(fwp_enriched, track.height = 0.04,ylim = c(0,1), bg.border = "gray", 
+                              bg.col=NA,
+                              panel.fun = function(region, value, ...){
+                                i=getI(...)
+                                if(i == 1){
+                       circos.genomicRect(region, value, col = "#E41A1C", border =NA)}
+                                else{
+                       circos.genomicRect(region, value, col = "#377EB8", border = NA)
+                                }
+                                })
+
+
+
+#绘制freshwater_mean_abundance_difference
+circos.genomicTrackPlotRegion(fw_mean_diff, track.height = 0.05, bg.border = NA, bg.col = "gray95",
+                              ylim=c(-1,1),
+                              panel.fun = function(region, value, ...){
+                               i=getI(...)
+                                if(i == 1){
+                                  circos.genomicRect(region, value, col = "#E41A1C", border = NA, alpha = 0.6, ybottom = 0, ytop.column = 1)
+                                }else{
+                                  circos.genomicRect(region, value, col = "#377EB8", border = NA,alpha = 0.6, ybottom = 0, ytop.column = 1)
+                                }})
+
+# #绘制freshwater_environment_mean_abundance
+# circos.genomicTrackPlotRegion(fwe_mean, track.height = 0.05, bg.border = NA, bg.col = "gray95",
+#                               ylim=c(0,1),
+#                               panel.fun = function(region, value, ...){
+#                               circos.genomicRect(region, value, col = "#377EB8", border = NA,
+#                                                      ybottom = 0, ytop.column = 1)
+#                                 })
+
+
+## 绘制seawater_plastisphere_unique
+circos.genomicTrackPlotRegion(swp_unique, track.height = 0.02,ylim = c(0,2), bg.border = NA,
+                              bg.col=NA,
+                              panel.fun = function(region, value, ...){
+                                i=getI(...)
+                                if(i == 1){
+                              circos.genomicPoints(region, value, col = "#666666", pch = 19, cex = 0.5,
+                                                   ybottom = 0, ytop.column = 2)}
+                                })
+
+
+
+## 绘制seawater_plastisphere_enriched
+circos.genomicTrackPlotRegion(swp_enriched, track.height = 0.04,ylim = c(0,1), bg.border = "gray", 
+                              bg.col=NA,
+                              panel.fun = function(region, value, ...){
+                                i=getI(...)
+                                if(i == 1){
+                       circos.genomicRect(region, value, col = "#E41A1C", border =NA)}
+                                else{
+                       circos.genomicRect(region, value, col = "#377EB8", border = NA)
+                                }
+                                })
+
+
+
+# #绘制seawater_plastisphere_mean_abundance
+# circos.genomicTrackPlotRegion(swp_mean, track.height = 0.05, bg.border = NA, bg.col = "gray95",
+#                               ylim=c(0,1),
+#                               panel.fun = function(region, value, ...){
+#                               circos.genomicRect(region, value, col = "#E41A1C", border = NA,
+#                                                      ybottom = 0, ytop.column = 1)
+#                                 })
+
+
+#绘制seawater_mean_abundance_difference
+circos.genomicTrackPlotRegion(sw_mean_diff, track.height = 0.05, bg.border = NA, bg.col = "gray95",
+                              ylim=c(-1,1),
+                              panel.fun = function(region, value, ...){
+                               i=getI(...)
+                                if(i == 1){
+                                  circos.genomicRect(region, value, col = "#E41A1C", border = NA,alpha = 0.6,  ybottom = 0, ytop.column = 1)
+                                }else{
+                                  circos.genomicRect(region, value, col = "#377EB8", border = NA,alpha = 0.6, ybottom = 0, ytop.column = 1)
+                                }})
+
+
+## 绘制terrestrial_plastisphere_unique
+circos.genomicTrackPlotRegion(trp_unique, track.height = 0.02,ylim = c(0,2), bg.border = NA,
+                              bg.col=NA,
+                              panel.fun = function(region, value, ...){
+                                i=getI(...)
+                                if(i == 1){
+                              circos.genomicPoints(region, value, col = "#666666", pch = 19, cex = 0.5,
+                                                   ybottom = 0, ytop.column = 2)}
+                                })
+
+
+
+## 绘制terrestrial_plastisphere_enriched
+circos.genomicTrackPlotRegion(trp_enriched, track.height = 0.04,ylim = c(0,1), bg.border = "gray", 
+                              bg.col=NA,
+                              panel.fun = function(region, value, ...){
+                                i=getI(...)
+                                if(i == 1){
+                       circos.genomicRect(region, value, col = "#E41A1C", border =NA)}
+                                else{
+                       circos.genomicRect(region, value, col = "#377EB8", border = NA)
+                                }
+                                })
+
+
+
+#绘制terrestrial_mean_abundance_difference
+circos.genomicTrackPlotRegion(tr_mean_diff, track.height = 0.05, bg.border = NA, bg.col = "gray95",
+                              ylim=c(-1,1),
+                              panel.fun = function(region, value, ...){
+                               i=getI(...)
+                                if(i == 1){
+                                  circos.genomicRect(region, value, col = "#E41A1C", border = NA,alpha = 0.6, ybottom = 0, ytop.column = 1)
+                                }else{
+                                  circos.genomicRect(region, value, col = "#377EB8", border = NA,alpha = 0.6, ybottom = 0, ytop.column = 1)
+                                }})
+
+# #绘制terrestrial_environment_mean_abundance
+# circos.genomicTrackPlotRegion(tre_mean, track.height = 0.05, bg.border = NA, bg.col = "gray95",
+#                               ylim=c(0,1),
+#                               panel.fun = function(region, value, ...){
+#                               circos.genomicRect(region, value, col = "#377EB8", border = NA,
+#                                                      ybottom = 0, ytop.column = 1)
+#                                 })
+
+```
+
+
+
+
+```{r}
+
+library(spaa)
+library(ggplot2)
+library(ggpubr)
+library(ggpmisc)
+library(reshape2)
+library(dplyr)
+library(ggbeeswarm)
+
+
+lccol2 =c("#377EB8", "#E41A1C")
+
+d1 <- read.csv("pathogen_total_abundance.csv", header = TRUE,row.names = 1)
+
+d2 <- melt(d1, id.vars = c("Carrier", "Ecosystem"))
+
+head(d2)
+
+
+#统计平均值和标准误和标准差
+se_df <- d2 %>% 
+  group_by(variable,Ecosystem,Carrier) %>% 
+  summarise(mean = mean(log2(value/1000+1)), sd = sd(log2(value/1000+1)), 
+            se = sd(log2(value/1000+1)) / sqrt(n()))
+
+
+pna <- ggplot() + 
+  
+
+  geom_beeswarm(data = d2, aes(x= Carrier, y= log2(value/1000+1)), color = "lightgray",
+                  dodge.width = 1, size=1) +
+  
+  geom_point(data = se_df,mapping = aes(x = Carrier, y = mean, color= Carrier), size=2,shape=19)+
+
+  geom_errorbar(data = se_df,mapping = aes(x = Carrier, y = mean, color= Carrier,
+                                           ymin = mean-sd, ymax = mean+sd),
+                width=0, size = 0.6) +
+  
+  scale_color_manual(values = lccol2) +
+  
+  labs(x="Carrier", y="log2[pathogen_abundance]")+
+  
+  theme_bw()+
+  
+  theme(legend.position = "top", panel.grid = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
+  
+  geom_signif(data = d2, aes(x= Carrier, y= log2(value/1000+1)),
+              
+              comparisons =list(c("Environment", "Plastisphere")),
+              
+              step_increase =0,textsize =5,map_signif_level = T,test = "wilcox.test")+
+  
+      facet_grid(variable~Ecosystem, scales = "free_y")
+
+
+pna
+
+ggsave(plot = pna, "pathogen_abundance.pdf", height = 96, width = 70, units = "mm")
+
+```
+
+
+

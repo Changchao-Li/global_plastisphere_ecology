@@ -1,0 +1,144 @@
+---
+title: "source_contribution"
+author: "Changchao Li"
+date: "2022/1/21"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+library("reshape2", quietly=T, warn.conflicts=F)
+library(ggalluvial)
+library(ggsci)
+
+```
+
+
+
+```{r}
+
+fwp_source <- read.csv("fwp_source_contributions.csv", header = T)
+
+fwp_source = as.data.frame(melt(fwp_source, id.vars=c("source")))
+
+head(fwp_source)
+
+# lccol = c("#5E4FA2","#3288BD","#66C2A5","#ABDDA4","#E6F598","#FEE08B","#FDAE61", "#F46D43", "#D53E4F", "#9E0142")
+
+lccol = c("#377EB8","#66C2A5","#FEE08B","#FDAE61", "#D53E4F", "grey")
+lccol1 = c("#A6CEE3", "#1F78B4", "#B2DF8A", "#33A02C", "#FF7F00", "grey")  ## paired
+
+p1 = ggplot(fwp_source, aes(x=variable, y = value, fill = source)) + 
+  
+  geom_bar(stat = "identity", width=1, alpha = 1)+ 
+  
+  scale_fill_manual(values = lccol1) +
+  
+  theme_minimal() +
+  
+  labs(x = "", y = "Relative Abundance") +
+  
+  theme(axis.text.x = element_blank(), 
+        axis.ticks.x = element_blank(), 
+        strip.background = element_blank(),
+        panel.grid=element_blank(),
+        legend.position="bottom")         
+
+
+p1
+
+
+```
+
+
+```{r}
+
+swp_source <- read.csv("swp_source_contributions.csv", header = T)
+
+swp_source = as.data.frame(melt(swp_source, id.vars=c("source")))
+
+head(swp_source)
+
+
+lccol2 = c("#A6CEE3", "#E31A1C","#1F78B4", "#33A02C", "#FF7F00", "grey")  ## paired
+
+p2 = ggplot(swp_source, aes(x=variable, y = value, fill = source)) + 
+  
+  geom_bar(stat = "identity", width=1, alpha = 1)+ 
+  
+  scale_fill_manual(values = lccol2) +
+  
+  theme_minimal() +
+  
+  labs(x = "", y = "Relative Abundance") +
+  
+  theme(axis.text.x = element_blank(), 
+        axis.ticks.x = element_blank(), 
+        strip.background = element_blank(),
+        panel.grid=element_blank(),
+        legend.position="bottom")         
+
+
+p2
+
+
+```
+
+
+
+```{r}
+
+tep_source <- read.csv("tep_source_contributions.csv", header = T)
+
+tep_source = as.data.frame(melt(tep_source, id.vars=c("source")))
+
+head(tep_source)
+
+
+lccol3 = c("#A6CEE3","#E31A1C", "#1F78B4", "#B2DF8A", "#33A02C", "grey")  ## paired
+
+p3 = ggplot(tep_source, aes(x=variable, y = value, fill = source)) + 
+  
+  geom_bar(stat = "identity", width=1, alpha = 1)+ 
+  
+  scale_fill_manual(values = lccol3) +
+  
+  theme_minimal() +
+  
+  labs(x = "", y = "Relative Abundance") +
+  
+  theme(axis.text.x = element_blank(), 
+        axis.ticks.x = element_blank(), 
+        strip.background = element_blank(),
+        panel.grid=element_blank(),
+        legend.position="bottom")         
+
+
+p3
+
+
+```
+
+
+
+```{r}
+
+library(patchwork)
+
+p6 <- p1 + p2 + p3 + 
+  
+  plot_layout(heights = c(1,1,1), ncol = 1, nrow = 3)
+
+p6
+
+ggsave("source_analysis.pdf", p6, width = 166, height = 216, units = c("mm"))
+
+```
+
+
+

@@ -1,0 +1,903 @@
+,log2FC,log2CPM,PValue,FDR,level,otu,neglogp,tax
+Telmatobacter,-2.166,13.666,6.30E-18,3.46E-16,Depleted,Telmatobacter,17.20065945,Acidobacteria
+Gp1,-1.78,14.921,2.33E-21,3.03E-19,Depleted,Gp1,20.63264408,Acidobacteria
+Acidobacterium,-4.039,15.074,1.55E-08,1.60E-07,Depleted,Acidobacterium,7.809668302,Acidobacteria
+Candidatus_Koribacter,-2.378,12.666,1.36E-15,4.41E-14,Depleted,Candidatus_Koribacter,14.86646109,Acidobacteria
+Acidipila,-1.878,10.551,0.002837268,0.011062243,Depleted,Acidipila,2.54709964,Acidobacteria
+Bryocella,-0.579,9.966,0.305123396,0.63103056,NotSig,Bryocella,0.515524491,Acidobacteria
+Gp10,-1.726,14.009,1.83E-14,4.27E-13,Depleted,Gp10,13.73754891,Acidobacteria
+Gp11,-1.57,12.136,9.17E-06,6.44E-05,Depleted,Gp11,5.037630664,Acidobacteria
+Gp13,-5.372,15.92,4.43E-19,3.16E-17,Depleted,Gp13,18.35359627,Acidobacteria
+Gp14,0.141,10.551,0.934035163,1,NotSig,Gp14,0.029636774,Acidobacteria
+Gp16,-0.725,16.449,7.68E-06,5.51E-05,Depleted,Gp16,5.11463878,Acidobacteria
+Gp17,-2.905,15.596,4.36E-16,1.48E-14,Depleted,Gp17,15.36051351,Acidobacteria
+Gp2,-1.295,16.116,1.50E-18,9.31E-17,Depleted,Gp2,17.82390874,Acidobacteria
+Gp21,-1.037,11.55,4.75E-05,0.000285717,Depleted,Gp21,4.32330639,Acidobacteria
+Gp22,-2.737,12.774,6.75E-14,1.44E-12,Depleted,Gp22,13.17069623,Acidobacteria
+Gp25,-3.18,11.774,4.60E-09,5.26E-08,Depleted,Gp25,8.337242168,Acidobacteria
+Gp26,-2.442,15.054,5.93E-10,7.98E-09,Depleted,Gp26,9.226945307,Acidobacteria
+Candidatus_Solibacter,-2.255,12.966,5.12E-22,8.12E-20,Depleted,Candidatus_Solibacter,21.29073004,Acidobacteria
+Paludibaculum,-1.5,13.551,0.032267069,0.096127572,Depleted,Paludibaculum,1.491240482,Acidobacteria
+Gp3,-0.714,13.721,0.002870234,0.011160284,Depleted,Gp3,2.542082695,Acidobacteria
+Gp4,-1.908,17.983,8.20E-12,1.38E-10,Depleted,Gp4,11.08618615,Acidobacteria
+Aridibacter,-0.024,16.021,0.104582199,0.266173766,NotSig,Aridibacter,0.980542231,Acidobacteria
+Blastocatella,-0.622,14.323,0.726498193,1,NotSig,Blastocatella,0.138765462,Acidobacteria
+Pyrinomonas,16.948,13.288,0.036016791,0.105104214,Enriched,Pyrinomonas,1.443494984,Acidobacteria
+Gp5,-3.532,13.873,1.46E-15,4.64E-14,Depleted,Gp5,14.83564714,Acidobacteria
+Gp6,-1.668,17.384,6.61E-05,0.000378558,Depleted,Gp6,4.179798541,Acidobacteria
+Gp7,-1.38,15.885,1.96E-07,1.87E-06,Depleted,Gp7,6.707743929,Acidobacteria
+Gp9,4.5,13.214,0.052749071,0.148175048,NotSig,Gp9,1.277785185,Acidobacteria
+Geothrix,0.716,13.359,0.419776586,0.772930566,NotSig,Geothrix,0.376981789,Acidobacteria
+Ilumatobacter,-0.363,14.873,0.005052815,0.018207998,Depleted,Ilumatobacter,2.296466602,Actinobacteria
+Ferrithrix,-2.405,12.289,1.39E-08,1.45E-07,Depleted,Ferrithrix,7.8569852,Actinobacteria
+Ferrimicrobium,-2.209,12.136,1.67E-15,5.06E-14,Depleted,Ferrimicrobium,14.77728353,Actinobacteria
+Acidimicrobium,-0.95,10.966,0.34100209,0.667865844,NotSig,Acidimicrobium,0.467242959,Actinobacteria
+Aciditerrimonas,-0.504,13.772,0.00021087,0.001122804,Depleted,Aciditerrimonas,3.675985202,Actinobacteria
+Aquihabitans,0.039,14.425,7.70E-07,6.58E-06,Enriched,Aquihabitans,6.113509275,Actinobacteria
+Iamia,0.875,12.551,0.596553814,1,NotSig,Iamia,0.224350373,Actinobacteria
+Acidothermus,-2.926,14.011,1.99E-15,5.92E-14,Depleted,Acidothermus,14.70114692,Actinobacteria
+Trueperella,-4.208,12.136,3.80E-15,1.06E-13,Depleted,Trueperella,14.4202164,Actinobacteria
+Actinomyces,-3.646,15.58,4.92E-22,8.12E-20,Depleted,Actinomyces,21.3080349,Actinobacteria
+Actinopolyspora,1.8,10.551,0.645465442,1,NotSig,Actinopolyspora,0.190127005,Actinobacteria
+Brevibacterium,3.073,11.288,0.012862025,0.040606438,Enriched,Brevibacterium,1.890690651,Actinobacteria
+Catenulispora,-1.459,11.551,0.000166195,0.000898336,Depleted,Catenulispora,3.779382046,Actinobacteria
+Actinotalea,-0.59,12.873,0.002336385,0.009338996,Depleted,Actinotalea,2.631455591,Actinobacteria
+Cellulomonas,1.698,13.721,0.126076916,0.311266019,NotSig,Cellulomonas,0.899364423,Actinobacteria
+Oerskovia,17.166,12.288,0.001012122,0.0045137,Enriched,Oerskovia,2.994767135,Actinobacteria
+Corynebacterium,3.296,12.666,0.000314444,0.001591176,Enriched,Corynebacterium,3.502456688,Actinobacteria
+Jatrophihabitans,-1.544,13.054,3.80E-13,7.33E-12,Depleted,Jatrophihabitans,12.4202164,Actinobacteria
+Cryptosporangium,1.209,16.709,0.965914991,1,NotSig,Cryptosporangium,0.015061094,Actinobacteria
+Fodinicola,-0.633,13.551,0.391714685,0.726887979,NotSig,Fodinicola,0.407030147,Actinobacteria
+Demequina,3.169,13.551,0.003123302,0.012013346,Enriched,Demequina,2.505386021,Actinobacteria
+Brachybacterium,15.429,10.966,0.012784286,0.040450911,Enriched,Brachybacterium,1.893323522,Actinobacteria
+Dietzia,6.354,13.92,0.010979318,0.036183571,Enriched,Dietzia,1.959424636,Actinobacteria
+Blastococcus,2.779,17.734,0.061888671,0.166632327,NotSig,Blastococcus,1.208388843,Actinobacteria
+Modestobacter,2.724,16.214,0.333116773,0.667865844,NotSig,Modestobacter,0.477403499,Actinobacteria
+Geodermatophilus,-0.219,15.213,5.63E-05,0.000329441,Depleted,Geodermatophilus,4.249491605,Actinobacteria
+Glycomyces,1.507,15.988,0.039928074,0.115572741,Enriched,Glycomyces,1.398721638,Actinobacteria
+Ornithinibacter,-0.499,13.966,0.531746232,0.950580583,NotSig,Ornithinibacter,0.274295579,Actinobacteria
+Terrabacter,0.168,12.873,0.84715797,1,NotSig,Terrabacter,0.072035599,Actinobacteria
+Ornithinimicrobium,1.429,13.054,0.873001087,1,NotSig,Ornithinimicrobium,0.058985216,Actinobacteria
+Serinicoccus,3.122,13.135,0.08104338,0.214499153,NotSig,Serinicoccus,1.091282455,Actinobacteria
+Intrasporangium,2.063,11.287,0.005501428,0.019528702,Enriched,Intrasporangium,2.259524567,Actinobacteria
+Fodinibacter,-5.244,11.551,7.18E-06,5.17E-05,Depleted,Fodinibacter,5.143875556,Actinobacteria
+Kineococcus,3.799,10.551,0.00689008,0.024157602,Enriched,Kineococcus,2.161775736,Actinobacteria
+Kineosporia,0.895,12.965,0.864122306,1,NotSig,Kineosporia,0.063424784,Actinobacteria
+Rhodoluna,2.302,10.55,0.033955239,0.100319101,Enriched,Rhodoluna,1.469093208,Actinobacteria
+Agromyces,0.765,14.288,0.020065926,0.061711372,Enriched,Agromyces,1.697540794,Actinobacteria
+Agrococcus,1.938,13.287,0.122912712,0.30556871,NotSig,Agrococcus,0.910403199,Actinobacteria
+Microbacterium,1.366,14.666,7.02E-07,6.10E-06,Enriched,Microbacterium,6.153662888,Actinobacteria
+Leifsonia,1.939,15.442,0.000337679,0.001702716,Enriched,Leifsonia,3.471495947,Actinobacteria
+Mycetocola,3.565,12.288,0.000219488,0.001141057,Enriched,Mycetocola,3.658589219,Actinobacteria
+Gryllotalpicola,14.329,10.965,0.061235623,0.165187448,NotSig,Gryllotalpicola,1.212995859,Actinobacteria
+Microcella,1.146,12.136,0.466431131,0.851147346,NotSig,Microcella,0.331212471,Actinobacteria
+Pseudoclavibacter,11.523,8.966,0.354056992,0.667865844,NotSig,Pseudoclavibacter,0.450926825,Actinobacteria
+Marisediminicola,19.677,14.666,4.79E-05,0.000287477,Enriched,Marisediminicola,4.319664487,Actinobacteria
+Schumannella,2.8,11.551,0.085004098,0.222979499,NotSig,Schumannella,1.070560137,Actinobacteria
+Lysinimonas,1.648,11.773,0.929213301,1,NotSig,Lysinimonas,0.031884582,Actinobacteria
+Herbiconiux,1.385,10.55,0.23667477,0.51249605,NotSig,Herbiconiux,0.625848036,Actinobacteria
+Rathayibacter,-3.784,9.966,1.68E-05,0.000111811,Depleted,Rathayibacter,4.774690718,Actinobacteria
+Leucobacter,18.78,14.095,0.000221495,0.001141057,Enriched,Leucobacter,3.654636073,Actinobacteria
+Amnibacterium,-11.723,8.966,0.286674213,0.599830062,NotSig,Amnibacterium,0.542611371,Actinobacteria
+Clavibacter,16.77,12.288,0.002781979,0.01087672,Enriched,Clavibacter,2.555646153,Actinobacteria
+Arthrobacter,1.871,19.003,6.35E-12,1.08E-10,Enriched,Arthrobacter,11.19722627,Actinobacteria
+Kocuria,2.302,10.551,0.004526748,0.016648632,Enriched,Kocuria,2.344213682,Actinobacteria
+Sinomonas,0.385,12.288,0.71422541,1,NotSig,Sinomonas,0.146164703,Actinobacteria
+Luteimicrobium,-1.641,16.116,0.227915259,0.495785174,NotSig,Luteimicrobium,0.642226598,Actinobacteria
+Micromonospora,-2.504,15.032,6.35E-13,1.19E-11,Depleted,Micromonospora,12.19722627,Actinobacteria
+Rugosimonospora,-1.56,14.175,1.73E-16,6.84E-15,Depleted,Rugosimonospora,15.7619539,Actinobacteria
+Actinoplanes,0.145,14.458,0.832317669,1,NotSig,Actinoplanes,0.079710886,Actinobacteria
+Catelliglobosispora,-3.078,12.666,2.20E-15,6.41E-14,Depleted,Catelliglobosispora,14.65757732,Actinobacteria
+Dactylosporangium,-2.3,12.425,2.26E-22,4.62E-20,Depleted,Dactylosporangium,21.64589156,Actinobacteria
+Allocatelliglobosispora,-1.117,11.773,0.056953026,0.158734314,NotSig,Allocatelliglobosispora,1.244483196,Actinobacteria
+Rhizocola,-1.499,12.774,0.487446396,0.88272336,NotSig,Rhizocola,0.312073136,Actinobacteria
+Actinocatenispora,-3.259,10.551,5.26E-05,0.000312466,Depleted,Actinocatenispora,4.279014256,Actinobacteria
+Verrucosispora,18.38,15.409,0.002781895,0.01087672,Enriched,Verrucosispora,2.555659266,Actinobacteria
+Mycobacterium,0.153,15.442,0.001215564,0.005370311,Enriched,Mycobacterium,2.91522217,Actinobacteria
+Nakamurella,0.467,14.458,0.804743428,1,NotSig,Nakamurella,0.094342561,Actinobacteria
+Nocardia,5.62,18.885,1.61E-21,2.30E-19,Enriched,Nocardia,20.79317412,Actinobacteria
+Gordonia,3.996,11.551,6.52E-05,0.000375219,Enriched,Gordonia,4.185752404,Actinobacteria
+Rhodococcus,3.688,15.251,3.84E-19,2.89E-17,Enriched,Rhodococcus,18.41566878,Actinobacteria
+Williamsia,3.424,13.214,4.68E-05,0.000283106,Enriched,Williamsia,4.329754147,Actinobacteria
+Smaragdicoccus,1.187,11.967,0.266332054,0.571512544,NotSig,Smaragdicoccus,0.574576562,Actinobacteria
+Nocardioides,2.811,18.022,2.48E-15,7.07E-14,Enriched,Nocardioides,14.60554832,Actinobacteria
+Aeromicrobium,3.589,18.116,1.48E-05,9.96E-05,Enriched,Aeromicrobium,4.829738285,Actinobacteria
+Marmoricola,0.635,13.773,0.005914193,0.020889982,Enriched,Marmoricola,2.228104507,Actinobacteria
+Kribbella,0.239,13.824,0.593252181,1,NotSig,Kribbella,0.226760656,Actinobacteria
+Nocardiopsis,0.305,14.721,0.218596628,0.477568737,NotSig,Nocardiopsis,0.660356542,Actinobacteria
+Thermobifida,2.69,16.009,0.027087582,0.082067898,Enriched,Thermobifida,1.567229761,Actinobacteria
+Streptomonospora,-0.741,12.666,0.051524399,0.145020351,NotSig,Streptomonospora,1.287987065,Actinobacteria
+Cellulosimicrobium,2.693,14.323,0.080964136,0.214499153,NotSig,Cellulosimicrobium,1.091707314,Actinobacteria
+Promicromonospora,2.932,13.666,0.059511323,0.164578795,NotSig,Promicromonospora,1.225400395,Actinobacteria
+Propionibacterium,16.566,12.426,0.001012101,0.0045137,Enriched,Propionibacterium,2.994776146,Actinobacteria
+Luteococcus,-2.147,13.134,0.00198071,0.007984389,Depleted,Luteococcus,2.703179106,Actinobacteria
+Tessaracoccus,-5.928,11.551,3.88E-15,1.06E-13,Depleted,Tessaracoccus,14.41116827,Actinobacteria
+Naumannella,-3.522,10.551,1.22E-05,8.40E-05,Depleted,Naumannella,4.913640169,Actinobacteria
+Microlunatus,1.098,12.551,0.590687545,1,NotSig,Microlunatus,0.228642186,Actinobacteria
+Aestuariimicrobium,-2.645,12.773,0.001928377,0.007817595,Depleted,Aestuariimicrobium,2.714808057,Actinobacteria
+Amycolatopsis,5.624,18.037,0.015963942,0.049957335,Enriched,Amycolatopsis,1.796859859,Actinobacteria
+Pseudonocardia,1.099,14.61,0.286300212,0.599830062,NotSig,Pseudonocardia,0.54317833,Actinobacteria
+Saccharopolyspora,0.036,14.988,6.75E-06,4.89E-05,Enriched,Saccharopolyspora,5.170696227,Actinobacteria
+Actinomycetospora,1.781,14.136,0.461724874,0.844719737,NotSig,Actinomycetospora,0.335616729,Actinobacteria
+Saccharomonospora,2.454,15.977,0.011187405,0.036615657,Enriched,Saccharomonospora,1.95127064,Actinobacteria
+Saccharothrix,3.003,13.873,0.000220413,0.001141057,Enriched,Saccharothrix,3.656762794,Actinobacteria
+Actinophytocola,18.599,14.747,0.001677579,0.00694024,Enriched,Actinophytocola,2.775317019,Actinobacteria
+Sanguibacter,16.807,11.966,0.001677796,0.00694024,Enriched,Sanguibacter,2.775260845,Actinobacteria
+Sporichthya,12.522,8.966,0.187785755,0.419363703,NotSig,Sporichthya,0.726337355,Actinobacteria
+Streptomyces,-0.364,18.165,3.98E-05,0.000244564,Depleted,Streptomyces,4.400116928,Actinobacteria
+Streptacidiphilus,0.317,13.665,0.007143379,0.02492323,Enriched,Streptacidiphilus,2.146096307,Actinobacteria
+Kitasatospora,-0.813,11.288,0.421789426,0.775635967,NotSig,Kitasatospora,0.374904312,Actinobacteria
+Microtetraspora,1.787,13.489,0.679033317,1,NotSig,Microtetraspora,0.168108916,Actinobacteria
+Streptosporangium,0.288,12.667,0.467824155,0.852599067,NotSig,Streptosporangium,0.329917358,Actinobacteria
+Nonomuraea,-0.302,11.288,0.180861483,0.419363703,NotSig,Nonomuraea,0.742653912,Actinobacteria
+Sphaerisporangium,-3.522,10.551,1.83E-07,1.75E-06,Depleted,Sphaerisporangium,6.73754891,Actinobacteria
+Microbispora,-0.49,11.966,0.046697772,0.133810683,Depleted,Microbispora,1.33070384,Actinobacteria
+Actinomadura,-0.667,19.183,2.26E-12,4.04E-11,Depleted,Actinomadura,11.64589156,Actinobacteria
+Actinoallomurus,-2.663,15.195,3.59E-23,1.03E-20,Depleted,Actinoallomurus,22.44490555,Actinobacteria
+Actinocorallia,-3.304,10.551,3.19E-08,3.23E-07,Depleted,Actinocorallia,7.496209317,Actinobacteria
+Bifidobacterium,17.223,12.667,0.000221492,0.001141057,Enriched,Bifidobacterium,3.654641955,Actinobacteria
+Atopobium,-2.023,12.966,5.34E-05,0.000315018,Depleted,Atopobium,4.272458743,Actinobacteria
+Olsenella,-1.595,12.288,0.00047781,0.002327083,Depleted,Olsenella,3.320744765,Actinobacteria
+Eggerthella,-4.724,9.967,3.48E-06,2.67E-05,Depleted,Eggerthella,5.458420756,Actinobacteria
+Slackia,-2.522,13.489,0.783151393,1,NotSig,Slackia,0.106154275,Actinobacteria
+Euzebya,-2.715,13.053,6.06E-10,8.09E-09,Depleted,Euzebya,9.217527376,Actinobacteria
+Gaiella,-3.434,16.624,3.61E-35,5.15E-32,Depleted,Gaiella,34.4424928,Actinobacteria
+Nitriliruptor,13.522,9.966,0.105759544,0.266173766,NotSig,Nitriliruptor,0.97568043,Actinobacteria
+Rubrobacter,-1.706,14.358,1.70E-06,1.38E-05,Depleted,Rubrobacter,5.769551079,Actinobacteria
+Conexibacter,-0.698,16.297,2.13E-20,2.18E-18,Depleted,Conexibacter,19.6716204,Actinobacteria
+Patulibacter,0.161,13.053,0.000259693,0.001333027,Enriched,Patulibacter,3.585539757,Actinobacteria
+Solirubrobacter,-0.693,15.92,1.21E-17,6.15E-16,Depleted,Solirubrobacter,16.91721463,Actinobacteria
+Thermoleophilum,-1.452,14.721,3.30E-10,4.66E-09,Depleted,Thermoleophilum,9.48148606,Actinobacteria
+Rhizomicrobium,-0.573,13.921,0.001546071,0.006665388,Depleted,Rhizomicrobium,2.810770566,Alphaproteobacteria
+Geminicoccus,-1.544,16.747,0.218871727,0.477568737,NotSig,Geminicoccus,0.659810335,Alphaproteobacteria
+Phenylobacterium,3.82,18.988,3.42E-08,3.43E-07,Enriched,Phenylobacterium,7.465973894,Alphaproteobacteria
+Brevundimonas,4.23,16.376,1.03E-20,1.22E-18,Enriched,Brevundimonas,19.98716278,Alphaproteobacteria
+Caulobacter,2.393,14.213,1.30E-05,8.81E-05,Enriched,Caulobacter,4.886056648,Alphaproteobacteria
+Asticcacaulis,1.215,11.288,0.745118673,1,NotSig,Asticcacaulis,0.127774553,Alphaproteobacteria
+Hirschia,4.592,15.885,1.75E-05,0.000115488,Enriched,Hirschia,4.756961951,Alphaproteobacteria
+Marinicauda,-5.659,10.551,4.48E-10,6.15E-09,Depleted,Marinicauda,9.348721986,Alphaproteobacteria
+Glycocaulis,-2.522,9.967,0.000621508,0.002936727,Depleted,Glycocaulis,3.206553277,Alphaproteobacteria
+Aurantimonas,2.444,11.773,0.055153064,0.154018438,NotSig,Aurantimonas,1.258430356,Alphaproteobacteria
+Aureimonas,2.887,13.135,0.072643635,0.193761622,NotSig,Aureimonas,1.138802432,Alphaproteobacteria
+Chelatococcus,18.692,13.873,0.000367875,0.00182914,Enriched,Chelatococcus,3.434299725,Alphaproteobacteria
+Beijerinckia,-2.04,13.214,2.75E-05,0.000175327,Depleted,Beijerinckia,4.560667306,Alphaproteobacteria
+Methylovirgula,-2.57,13.289,3.48E-08,3.47E-07,Depleted,Methylovirgula,7.458420756,Alphaproteobacteria
+Bradyrhizobium,0.37,16.786,0.018912005,0.058288188,Enriched,Bradyrhizobium,1.723262426,Alphaproteobacteria
+Bosea,3.335,15.136,4.50E-12,7.82E-11,Enriched,Bosea,11.34678749,Alphaproteobacteria
+Salinarimonas,-1.596,12.873,0.000124824,0.000679862,Depleted,Salinarimonas,3.903701905,Alphaproteobacteria
+Tardiphaga,3.141,13.61,4.76E-06,3.58E-05,Enriched,Tardiphaga,5.322393047,Alphaproteobacteria
+Nitrobacter,18.405,13.966,8.00E-05,0.000451096,Enriched,Nitrobacter,4.096910013,Alphaproteobacteria
+Pseudochrobactrum,6.291,13.61,0.000200967,0.001074083,Enriched,Pseudochrobactrum,3.696875251,Alphaproteobacteria
+Ochrobactrum,18.998,15.773,0.000610348,0.002893807,Enriched,Ochrobactrum,3.214422474,Alphaproteobacteria
+Rhodoplanes,-2.771,15.551,2.24E-11,3.48E-10,Depleted,Rhodoplanes,10.64975198,Alphaproteobacteria
+Pedomicrobium,-2.09,14.694,8.54E-11,1.28E-09,Depleted,Pedomicrobium,10.06854213,Alphaproteobacteria
+Devosia,0.878,15.135,0.622944031,1,NotSig,Devosia,0.205550971,Alphaproteobacteria
+Hyphomicrobium,-0.026,15.721,2.32E-07,2.17E-06,Depleted,Hyphomicrobium,6.634512015,Alphaproteobacteria
+Blastochloris,-2.948,12.966,7.72E-15,2.04E-13,Depleted,Blastochloris,14.1123827,Alphaproteobacteria
+Rhodomicrobium,-1.136,10.551,3.74E-05,0.000233976,Depleted,Rhodomicrobium,4.427128398,Alphaproteobacteria
+Pelagibacterium,0.452,11.288,0.60418532,1,NotSig,Pelagibacterium,0.218829831,Alphaproteobacteria
+Ancalomicrobium,-11.722,8.965,0.286674213,0.599830062,NotSig,Ancalomicrobium,0.542611371,Alphaproteobacteria
+Prosthecomicrobium,-0.2,9.966,0.841024144,1,NotSig,Prosthecomicrobium,0.075191536,Alphaproteobacteria
+Microvirga,0.829,15.861,0.299038633,0.621147205,NotSig,Microvirga,0.524272701,Alphaproteobacteria
+Methylobacterium,2.826,15.551,4.06E-05,0.00024874,Enriched,Methylobacterium,4.391473966,Alphaproteobacteria
+Methylocystis,0.433,14.214,0.844705513,1,NotSig,Methylocystis,0.073294671,Alphaproteobacteria
+Pleomorphomonas,-11.723,8.967,0.286674213,0.599830062,NotSig,Pleomorphomonas,0.542611371,Alphaproteobacteria
+Mesorhizobium,2.954,16.551,9.52E-09,1.04E-07,Enriched,Mesorhizobium,8.021363052,Alphaproteobacteria
+Hoeflea,2.327,15.01,0.091149758,0.2373553,NotSig,Hoeflea,1.04024448,Alphaproteobacteria
+Aquamicrobium,20.438,15.566,4.36E-07,3.97E-06,Enriched,Aquamicrobium,6.360513511,Alphaproteobacteria
+Phyllobacterium,0.537,9.966,0.839865894,1,NotSig,Phyllobacterium,0.075790055,Alphaproteobacteria
+Lentilitoribacter,-0.113,11.551,0.152893476,0.362814848,NotSig,Lentilitoribacter,0.815611046,Alphaproteobacteria
+Chelativorans,3.023,15.375,0.008984131,0.030308169,Enriched,Chelativorans,2.046523924,Alphaproteobacteria
+Nitratireductor,3.888,11.288,0.030595993,0.092247738,Enriched,Nitratireductor,1.514335447,Alphaproteobacteria
+Rhizobium,0.639,14.921,0.002327632,0.009330143,Enriched,Rhizobium,2.633085681,Alphaproteobacteria
+Kaistia,4.104,18.458,0.169715394,0.398328729,NotSig,Kaistia,0.770278763,Alphaproteobacteria
+Ensifer,5.099,16.955,6.44E-05,0.00037188,Enriched,Ensifer,4.191114133,Alphaproteobacteria
+Shinella,3.385,13.135,0.003994679,0.014869252,Enriched,Shinella,2.398518114,Alphaproteobacteria
+Amorphus,-0.664,13.053,0.12098145,0.301819108,NotSig,Amorphus,0.917281215,Alphaproteobacteria
+Methylobrevis,-3.955,13.966,1.37E-08,1.44E-07,Depleted,Methylobrevis,7.863279433,Alphaproteobacteria
+Phreatobacter,-0.841,12.288,0.008519974,0.029155881,Depleted,Phreatobacter,2.069561731,Alphaproteobacteria
+Alsobacter,-0.937,13.92,0.012064987,0.039128948,Depleted,Alsobacter,1.918473142,Alphaproteobacteria
+Bauldia,-1.711,12.425,5.15E-05,0.000307511,Depleted,Bauldia,4.288192771,Alphaproteobacteria
+Hartmannibacter,-2.126,9.966,0.001911204,0.007792251,Depleted,Hartmannibacter,2.718692954,Alphaproteobacteria
+Methyloceanibacter,-1.964,13.425,3.78E-16,1.33E-14,Depleted,Methyloceanibacter,15.4225082,Alphaproteobacteria
+Methyloligella,1.384,10.55,0.928844777,1,NotSig,Methyloligella,0.032056857,Alphaproteobacteria
+Parvibaculum,7.284,16.897,0.000414424,0.002025286,Enriched,Parvibaculum,3.382555102,Alphaproteobacteria
+Rhodoligotrophos,-1.811,12.288,8.61E-11,1.28E-09,Depleted,Rhodoligotrophos,10.06499685,Alphaproteobacteria
+Afifella,-11.724,8.967,0.286674213,0.599830062,NotSig,Afifella,0.542611371,Alphaproteobacteria
+Roseiarcus,-3.029,14.214,2.41E-16,9.31E-15,Depleted,Roseiarcus,15.61798296,Alphaproteobacteria
+Pseudolabrys,-1.196,14.489,1.56E-19,1.24E-17,Depleted,Pseudolabrys,18.8068754,Alphaproteobacteria
+Xanthobacter,1.483,14.694,0.007253924,0.025185766,Enriched,Xanthobacter,2.139426999,Alphaproteobacteria
+Azorhizobium,17.046,14.214,0.036016418,0.105104214,Enriched,Azorhizobium,1.443499482,Alphaproteobacteria
+Ancylobacter,3.726,14.799,0.021478248,0.065350661,Enriched,Ancylobacter,1.668001147,Alphaproteobacteria
+Labrys,-1.2,11.288,0.001434531,0.006250191,Depleted,Labrys,2.843290062,Alphaproteobacteria
+Thalassococcus,13.107,9.966,0.187787951,0.419363703,NotSig,Thalassococcus,0.726332277,Alphaproteobacteria
+Mameliella,-3.723,12.872,0.053412217,0.149743092,NotSig,Mameliella,1.272359395,Alphaproteobacteria
+Litoreibacter,11.523,8.966,0.354056992,0.667865844,NotSig,Litoreibacter,0.450926825,Alphaproteobacteria
+Pseudoruegeria,0.537,9.966,0.344455293,0.667865844,NotSig,Pseudoruegeria,0.462867137,Alphaproteobacteria
+Pelagicola,12.522,8.966,0.187785755,0.419363703,NotSig,Pelagicola,0.726337355,Alphaproteobacteria
+Loktanella,1.674,11.966,0.476089644,0.866556022,NotSig,Loktanella,0.322311265,Alphaproteobacteria
+Sulfitobacter,11.523,8.967,0.354056992,0.667865844,NotSig,Sulfitobacter,0.450926825,Alphaproteobacteria
+Citreicella,11.522,8.965,0.354056992,0.667865844,NotSig,Citreicella,0.450926825,Alphaproteobacteria
+Albidovulum,-1.339,14.551,2.50E-05,0.000161476,Depleted,Albidovulum,4.602059991,Alphaproteobacteria
+Paracoccus,3.09,12.551,2.73E-05,0.000174659,Enriched,Paracoccus,4.563837353,Alphaproteobacteria
+Rhodobacter,0.286,10.966,0.85161008,1,NotSig,Rhodobacter,0.069759207,Alphaproteobacteria
+Boseongicola,12.522,8.966,0.187785755,0.419363703,NotSig,Boseongicola,0.726337355,Alphaproteobacteria
+Thalassobius,-2.2,9.967,0.251580161,0.542303459,NotSig,Thalassobius,0.599323609,Alphaproteobacteria
+Pseudooctadecabacter,2.555,13.055,0.001824738,0.007461034,Enriched,Pseudooctadecabacter,2.738799484,Alphaproteobacteria
+Amaricoccus,2.121,8.967,0.143432417,0.342271002,NotSig,Amaricoccus,0.843352683,Alphaproteobacteria
+Hwanghaeicola,11.522,8.965,0.354056992,0.667865844,NotSig,Hwanghaeicola,0.450926825,Alphaproteobacteria
+Jannaschia,-11.723,8.966,0.286674213,0.599830062,NotSig,Jannaschia,0.542611371,Alphaproteobacteria
+Rhodovulum,0.428,10.966,0.689973651,1,NotSig,Rhodovulum,0.161167494,Alphaproteobacteria
+Gemmobacter,3.302,11.966,0.050907075,0.143850289,NotSig,Gemmobacter,1.293221856,Alphaproteobacteria
+Albimonas,1.062,9.966,0.413918363,0.765105575,NotSig,Albimonas,0.383085306,Alphaproteobacteria
+Pseudorhodobacter,12.522,8.966,0.187785755,0.419363703,NotSig,Pseudorhodobacter,0.726337355,Alphaproteobacteria
+Labrenzia,1.385,9.966,0.337150034,0.667865844,NotSig,Labrenzia,0.472176792,Alphaproteobacteria
+Nioella,11.523,8.966,0.354056992,0.667865844,NotSig,Nioella,0.450926825,Alphaproteobacteria
+Maribius,12.522,8.966,0.187785755,0.419363703,NotSig,Maribius,0.726337355,Alphaproteobacteria
+Tabrizicola,13.107,8.966,0.105756061,0.266173766,NotSig,Tabrizicola,0.975694733,Alphaproteobacteria
+Falsirhodobacter,0.105,11.288,0.677645906,1,NotSig,Falsirhodobacter,0.168997181,Alphaproteobacteria
+Cereibacter,-0.2,8.966,0.896681585,1,NotSig,Cereibacter,0.047361749,Alphaproteobacteria
+Rubellimicrobium,1.924,15.943,0.126307718,0.311297259,NotSig,Rubellimicrobium,0.898570111,Alphaproteobacteria
+Oceanicella,11.522,8.965,0.354056992,0.667865844,NotSig,Oceanicella,0.450926825,Alphaproteobacteria
+Profundibacterium,-3.008,9.967,0.035515154,0.104711002,Depleted,Profundibacterium,1.449586298,Alphaproteobacteria
+Roseomonas,-0.742,14.489,0.04781322,0.136186557,Depleted,Roseomonas,1.320452008,Alphaproteobacteria
+Humitalea,14.522,9.966,0.012782993,0.040450911,Enriched,Humitalea,1.893367449,Alphaproteobacteria
+Acidisoma,-2.112,12.426,6.39E-19,4.18E-17,Depleted,Acidisoma,18.19449914,Alphaproteobacteria
+Roseococcus,0.022,9.966,0.693329589,1,NotSig,Roseococcus,0.159060265,Alphaproteobacteria
+Rhodopila,-2.241,12.136,9.03E-10,1.15E-08,Depleted,Rhodopila,9.04431225,Alphaproteobacteria
+Acetobacter,-5.287,10.966,4.12E-10,5.71E-09,Depleted,Acetobacter,9.385102784,Alphaproteobacteria
+Acidiphilium,1.274,10.551,0.195704965,0.432308027,NotSig,Acidiphilium,0.708398156,Alphaproteobacteria
+Stella,2.463,11.773,0.102437522,0.264336969,NotSig,Stella,0.989540936,Alphaproteobacteria
+Granulibacter,-2.199,8.967,0.131913451,0.318511835,NotSig,Granulibacter,0.879710918,Alphaproteobacteria
+Acidicaldus,-1.522,8.966,0.18105532,0.419363703,NotSig,Acidicaldus,0.74218871,Alphaproteobacteria
+Kozakia,-3.075,10.966,2.38E-06,1.86E-05,Depleted,Kozakia,5.623423043,Alphaproteobacteria
+Acidisphaera,-2.2,9.966,0.014038938,0.044126793,Depleted,Acidisphaera,1.852665744,Alphaproteobacteria
+Caenispirillum,0.856,17.053,0.058439831,0.162244434,NotSig,Caenispirillum,1.233291049,Alphaproteobacteria
+Nisaea,0.589,11.551,0.347381564,0.667865844,NotSig,Nisaea,0.459193234,Alphaproteobacteria
+Oceanibaculum,17.38,13.288,0.001677729,0.00694024,Enriched,Oceanibaculum,2.775278189,Alphaproteobacteria
+Azospirillum,0.416,15.375,0.077744045,0.20659358,NotSig,Azospirillum,1.109332867,Alphaproteobacteria
+Skermanella,0.274,16.34,0.00040547,0.001995193,Enriched,Skermanella,3.392041273,Alphaproteobacteria
+Thalassobaculum,-15.307,9.966,0.00030663,0.001557157,Depleted,Thalassobaculum,3.513385357,Alphaproteobacteria
+Fodinicurvata,17.826,13.288,0.001677897,0.00694024,Enriched,Fodinicurvata,2.775234702,Alphaproteobacteria
+Rhodovibrio,-4.464,12.667,1.21E-16,4.91E-15,Depleted,Rhodovibrio,15.91721463,Alphaproteobacteria
+Dongia,-0.309,14.824,3.98E-05,0.000244564,Depleted,Dongia,4.400116928,Alphaproteobacteria
+Lacibacterium,-4.012,14.053,1.11E-15,3.68E-14,Depleted,Lacibacterium,14.95467702,Alphaproteobacteria
+Pelagibius,2.121,10.966,0.283820317,0.599830062,NotSig,Pelagibius,0.546956519,Alphaproteobacteria
+Phaeospirillum,3.707,11.773,0.03092539,0.092906382,Enriched,Phaeospirillum,1.509684815,Alphaproteobacteria
+Magnetospira,-1.038,11.551,0.00371955,0.013894758,Depleted,Magnetospira,2.429509599,Alphaproteobacteria
+Rhodocista,-0.965,12.425,0.4227739,0.77644576,NotSig,Rhodocista,0.373891832,Alphaproteobacteria
+Inquilinus,-1.213,12.424,5.29E-05,0.000312966,Depleted,Inquilinus,4.276544328,Alphaproteobacteria
+Marispirillum,11.523,8.966,0.354056992,0.667865844,NotSig,Marispirillum,0.450926825,Alphaproteobacteria
+Tistlia,-12.722,8.967,0.130125383,0.314726985,NotSig,Tistlia,0.885637979,Alphaproteobacteria
+Magnetospirillum,1.229,11.774,0.975960631,1,NotSig,Magnetospirillum,0.010567701,Alphaproteobacteria
+Niveispirillum,-14.307,8.966,0.008204592,0.028150025,Depleted,Niveispirillum,2.085943011,Alphaproteobacteria
+Reyranella,0.183,14.25,0.881026146,1,NotSig,Reyranella,0.055011203,Alphaproteobacteria
+Neorickettsia,-15.423,10.966,0.008206314,0.028150025,Depleted,Neorickettsia,2.08585187,Alphaproteobacteria
+Rickettsia,0.336,12.666,0.154412908,0.364813277,NotSig,Rickettsia,0.811316398,Alphaproteobacteria
+Orientia,-1.615,9.965,0.033723377,0.10025679,Depleted,Orientia,1.472068942,Alphaproteobacteria
+Ferrovibrio,6.645,13.61,1.80E-06,1.45E-05,Enriched,Ferrovibrio,5.744727495,Alphaproteobacteria
+Sneathiella,4.886,12.286,0.011224396,0.036652661,Enriched,Sneathiella,1.94983702,Alphaproteobacteria
+Oceanibacterium,-2.06,16.279,2.87E-06,2.23E-05,Depleted,Oceanibacterium,5.542118103,Alphaproteobacteria
+Taonella,16.692,12.136,0.012784416,0.040450911,Enriched,Taonella,1.893319106,Alphaproteobacteria
+Erythrobacter,0.471,11.966,0.488920364,0.883095809,NotSig,Erythrobacter,0.310761874,Alphaproteobacteria
+Altererythrobacter,1.688,14.694,0.588896044,1,NotSig,Altererythrobacter,0.229961363,Alphaproteobacteria
+Erythromicrobium,-2.209,12.668,0.000100518,0.000553821,Depleted,Erythromicrobium,3.997756161,Alphaproteobacteria
+Croceicoccus,18.441,13.92,0.000221486,0.001141057,Enriched,Croceicoccus,3.65465372,Alphaproteobacteria
+Porphyrobacter,-3.259,9.966,6.27E-06,4.57E-05,Depleted,Porphyrobacter,5.202732459,Alphaproteobacteria
+Blastomonas,1.207,13.609,0.083195369,0.219244485,NotSig,Blastomonas,1.079900848,Alphaproteobacteria
+Sphingobium,0.821,11.966,0.660166705,1,NotSig,Sphingobium,0.180346383,Alphaproteobacteria
+Rhizorhapis,1.419,11.551,0.042639607,0.122922666,Enriched,Rhizorhapis,1.370186807,Alphaproteobacteria
+Sphingomonas,0.383,16.873,0.003327934,0.012563391,Enriched,Sphingomonas,2.477825295,Alphaproteobacteria
+Novosphingobium,2.784,16.105,0.221432081,0.482417679,NotSig,Novosphingobium,0.654759458,Alphaproteobacteria
+Sphingopyxis,4.834,17.603,4.83E-10,6.57E-09,Enriched,Sphingopyxis,9.316052869,Alphaproteobacteria
+Sphingorhabdus,3.084,14.392,0.004582911,0.016719756,Enriched,Sphingorhabdus,2.338858577,Alphaproteobacteria
+Polymorphobacter,2.385,11.288,0.645465442,1,NotSig,Polymorphobacter,0.190127005,Alphaproteobacteria
+Sandarakinorhabdus,0.799,9.966,0.928844777,1,NotSig,Sandarakinorhabdus,0.032056857,Alphaproteobacteria
+Sphingosinicella,18.499,14.323,0.00022149,0.001141057,Enriched,Sphingosinicella,3.654645877,Alphaproteobacteria
+Candidatus_Pelagibacter,13.107,9.966,0.187787951,0.419363703,NotSig,Candidatus_Pelagibacter,0.726332277,Alphaproteobacteria
+Bacteroides,17.355,14.489,0.004616156,0.016719756,Enriched,Bacteroides,2.335719523,Bacteroidetes
+Saccharicrinis,-0.593,13.773,0.679592774,1,NotSig,Saccharicrinis,0.167751248,Bacteroidetes
+Mangroviflexus,1.385,11.967,0.006581024,0.023130839,Enriched,Mangroviflexus,2.181706525,Bacteroidetes
+Alkalitalea,19.785,16.873,0.012784286,0.040450911,Enriched,Alkalitalea,1.893323522,Bacteroidetes
+Carboxylicivirga,-0.392,10.551,0.416214175,0.767361276,NotSig,Carboxylicivirga,0.380683133,Bacteroidetes
+Marinilabilia,-2.075,9.967,0.032067627,0.09573327,Depleted,Marinilabilia,1.493933177,Bacteroidetes
+Paludibacter,3.97,13.136,0.928844777,1,NotSig,Paludibacter,0.032056857,Bacteroidetes
+Parabacteroides,13.523,9.967,0.187787951,0.419363703,NotSig,Parabacteroides,0.726332277,Bacteroidetes
+Porphyromonas,17.077,14.52,0.354056992,0.667865844,NotSig,Porphyromonas,0.450926825,Bacteroidetes
+Prevotella,3.8,11.967,0.084133138,0.221101266,NotSig,Prevotella,1.075032912,Bacteroidetes
+Draconibacterium,11.523,8.966,0.354056992,0.667865844,NotSig,Draconibacterium,0.450926825,Bacteroidetes
+Mariniphaga,2.606,9.966,0.140618366,0.336681892,NotSig,Mariniphaga,0.851957953,Bacteroidetes
+Prolixibacter,0.343,12.426,0.302259929,0.626015848,NotSig,Prolixibacter,0.519619424,Bacteroidetes
+Tangfeifania,-15.423,9.967,0.000590521,0.002837285,Depleted,Tangfeifania,3.228764653,Bacteroidetes
+Sunxiuqinia,-1.093,10.966,0.77392317,1,NotSig,Sunxiuqinia,0.111302151,Bacteroidetes
+Anaerocella,11.523,8.967,0.354056992,0.667865844,NotSig,Anaerocella,0.450926825,Bacteroidetes
+Catalinimonas,-3.522,12.425,0.009351476,0.031325249,Depleted,Catalinimonas,2.029119836,Bacteroidetes
+Algoriphagus,2.919,15.214,0.001785701,0.007322399,Enriched,Algoriphagus,2.748191258,Bacteroidetes
+Nitritalea,11.523,8.966,0.354056992,0.667865844,NotSig,Nitritalea,0.450926825,Bacteroidetes
+Cyclobacterium,19.374,15.442,0.001677914,0.00694024,Enriched,Cyclobacterium,2.775230302,Bacteroidetes
+Mariniradius,0.8,8.967,0.645465442,1,NotSig,Mariniradius,0.190127005,Bacteroidetes
+Mongoliitalea,17.692,14.489,0.001677344,0.00694024,Enriched,Mongoliitalea,2.77537786,Bacteroidetes
+Pseudarcicella,15.692,12.424,0.021390338,0.065223581,Enriched,Pseudarcicella,1.669782353,Bacteroidetes
+Pontibacter,0.345,14.58,0.924627987,1,NotSig,Pontibacter,0.034032965,Bacteroidetes
+Adhaeribacter,1.298,16.286,0.040125586,0.115909335,Enriched,Adhaeribacter,1.396578612,Bacteroidetes
+Dyadobacter,-0.655,14.251,0.27533417,0.589942735,NotSig,Dyadobacter,0.560139888,Bacteroidetes
+Emticicia,1.843,13.357,0.003186403,0.012188647,Enriched,Emticicia,2.496699298,Bacteroidetes
+Lacihabitans,12.522,8.965,0.187785755,0.419363703,NotSig,Lacihabitans,0.726337355,Bacteroidetes
+Cytophaga,1.071,14.053,0.621947868,1,NotSig,Cytophaga,0.206246017,Bacteroidetes
+Siphonobacter,14.692,11.55,0.061233678,0.165187448,NotSig,Siphonobacter,1.213009654,Bacteroidetes
+Hymenobacter,1.385,12.288,0.76576981,1,NotSig,Hymenobacter,0.115901759,Bacteroidetes
+Persicitalea,20.734,16.908,0.000610391,0.002893807,Enriched,Persicitalea,3.214391879,Bacteroidetes
+Larkinella,2.16,13.288,0.649878887,1,NotSig,Larkinella,0.187167572,Bacteroidetes
+Rhodocytophaga,18.122,13.719,0.001677847,0.00694024,Enriched,Rhodocytophaga,2.775247644,Bacteroidetes
+Sporocytophaga,19.577,14.848,0.000367879,0.00182914,Enriched,Sporocytophaga,3.434295003,Bacteroidetes
+Leadbetterella,17.5,14.639,0.061236272,0.165187448,NotSig,Leadbetterella,1.212991257,Bacteroidetes
+Nibrella,15.429,12.288,0.105760704,0.266173766,NotSig,Nibrella,0.975675667,Bacteroidetes
+Marinoscillum,-0.007,9.966,0.980095192,1,NotSig,Marinoscillum,0.008731741,Bacteroidetes
+Roseivirga,17.88,14.551,0.007672134,0.026445036,Enriched,Roseivirga,2.11508382,Bacteroidetes
+Marivirga,11.523,8.966,0.354056992,0.667865844,NotSig,Marivirga,0.450926825,Bacteroidetes
+Cesiribacter,11.523,8.966,0.354056992,0.667865844,NotSig,Cesiribacter,0.450926825,Bacteroidetes
+Ohtaekwangia,7.514,18.425,1.69E-06,1.38E-05,Enriched,Ohtaekwangia,5.772113295,Bacteroidetes
+Chryseolinea,0.309,14.964,0.003498527,0.013103407,Enriched,Chryseolinea,2.45611477,Bacteroidetes
+Lishizhenia,13.107,10.551,0.354056992,0.667865844,NotSig,Lishizhenia,0.450926825,Bacteroidetes
+Salinirepens,11.523,8.966,0.354056992,0.667865844,NotSig,Salinirepens,0.450926825,Bacteroidetes
+Fluviicola,3.063,11.288,9.74E-06,6.81E-05,Enriched,Fluviicola,5.011441043,Bacteroidetes
+Wandonia,1.801,9.965,0.013837551,0.043589814,Enriched,Wandonia,1.858940765,Bacteroidetes
+Crocinitomix,1.801,9.966,0.382045624,0.714394305,NotSig,Crocinitomix,0.41788477,Bacteroidetes
+Tenacibaculum,-0.522,9.966,0.571868528,1,NotSig,Tenacibaculum,0.242703804,Bacteroidetes
+Flavobacterium,1.787,15.392,6.65E-10,8.63E-09,Enriched,Flavobacterium,9.177178355,Bacteroidetes
+Maribacter,-2.396,12.136,0.00425642,0.015735523,Depleted,Maribacter,2.370955525,Bacteroidetes
+Gaetbulibacter,12.522,8.966,0.187785755,0.419363703,NotSig,Gaetbulibacter,0.726337355,Bacteroidetes
+Gelidibacter,20.209,16.126,0.001012182,0.0045137,Enriched,Gelidibacter,2.99474139,Bacteroidetes
+Aquimarina,18.808,14.323,0.004616387,0.016719756,Enriched,Aquimarina,2.335697791,Bacteroidetes
+Polaribacter,-0.199,8.967,0.928844777,1,NotSig,Polaribacter,0.032056857,Bacteroidetes
+Muricauda,18.499,14.694,0.004616202,0.016719756,Enriched,Muricauda,2.335715195,Bacteroidetes
+Gilvibacter,19.297,15.095,8.00E-05,0.000451096,Enriched,Gilvibacter,4.096910013,Bacteroidetes
+Gillisia,15.223,12.136,0.105760704,0.266173766,NotSig,Gillisia,0.975675667,Bacteroidetes
+Lutimonas,11.523,8.966,0.354056992,0.667865844,NotSig,Lutimonas,0.450926825,Bacteroidetes
+Spongiivirga,17.453,14.61,0.036016418,0.105104214,Enriched,Spongiivirga,1.443499482,Bacteroidetes
+Cloacibacterium,14.329,10.55,0.061236272,0.165187448,NotSig,Cloacibacterium,1.212991257,Bacteroidetes
+Spongiibacterium,12.522,8.966,0.187785755,0.419363703,NotSig,Spongiibacterium,0.726337355,Bacteroidetes
+Arenibacter,2.086,15.908,0.739820781,1,NotSig,Arenibacter,0.130873474,Bacteroidetes
+Chryseobacterium,7.175,15.954,9.65E-11,1.42E-09,Enriched,Chryseobacterium,10.01547269,Bacteroidetes
+Marixanthomonas,11.523,8.967,0.354056992,0.667865844,NotSig,Marixanthomonas,0.450926825,Bacteroidetes
+Aequorivita,-11.723,8.967,0.286674213,0.599830062,NotSig,Aequorivita,0.542611371,Bacteroidetes
+Bizionia,16.948,13.425,0.021390775,0.065223581,Enriched,Bizionia,1.66977348,Bacteroidetes
+Salinimicrobium,20.077,16.053,8.00E-05,0.000451096,Enriched,Salinimicrobium,4.096910013,Bacteroidetes
+Vitellibacter,20.159,15.707,0.000610397,0.002893807,Enriched,Vitellibacter,3.21438761,Bacteroidetes
+Ornithobacterium,-0.785,9.966,0.367322773,0.689696838,NotSig,Ornithobacterium,0.434952146,Bacteroidetes
+Galbibacter,1.924,14.694,0.787506822,1,NotSig,Galbibacter,0.103745675,Bacteroidetes
+Weeksella,17.107,13.489,0.002781756,0.01087672,Enriched,Weeksella,2.555680967,Bacteroidetes
+Sediminibacterium,-2.757,16.529,2.23E-09,2.67E-08,Depleted,Sediminibacterium,8.651695137,Bacteroidetes
+Flavisolibacter,0.026,17.259,0.097368483,0.252168467,NotSig,Flavisolibacter,1.011581596,Bacteroidetes
+Parasegetibacter,-0.222,13.824,0.186118501,0.419363703,NotSig,Parasegetibacter,0.730210454,Bacteroidetes
+Terrimonas,1.694,16.297,2.28E-06,1.80E-05,Enriched,Terrimonas,5.642065153,Bacteroidetes
+Niabella,1.067,14.252,0.508447466,0.913796642,NotSig,Niabella,0.293753913,Bacteroidetes
+Gracilimonas,13.107,9.966,0.187787951,0.419363703,NotSig,Gracilimonas,0.726332277,Bacteroidetes
+Hydrotalea,-0.007,11.966,0.329210161,0.667865844,NotSig,Hydrotalea,0.482526769,Bacteroidetes
+Chitinophaga,0.055,16.544,0.808993382,1,NotSig,Chitinophaga,0.092055031,Bacteroidetes
+Niastella,3.785,16.251,3.36E-05,0.000211268,Enriched,Niastella,4.473660723,Bacteroidetes
+Filimonas,18.905,16.277,0.021389901,0.065223581,Enriched,Filimonas,1.669791225,Bacteroidetes
+Ferruginibacter,2.601,16.064,0.002950964,0.011411995,Enriched,Ferruginibacter,2.530036089,Bacteroidetes
+Taibaiella,6.429,14.054,2.67E-05,0.000171535,Enriched,Taibaiella,4.573488739,Bacteroidetes
+Flavitalea,1.286,14.773,0.011441416,0.03727603,Enriched,Flavitalea,1.941520224,Bacteroidetes
+Arachidicoccus,20.519,16.315,0.002782034,0.01087672,Enriched,Arachidicoccus,2.555637567,Bacteroidetes
+Lacibacter,0.712,10.966,0.382478801,0.714394305,NotSig,Lacibacter,0.417392631,Bacteroidetes
+Flavihumibacter,0.058,10.967,0.827380544,1,NotSig,Flavihumibacter,0.082294696,Bacteroidetes
+Parafilimonas,17.014,12.966,0.007671902,0.026445036,Enriched,Parafilimonas,2.115096953,Bacteroidetes
+Cnuella,4.4,14.638,0.133354467,0.321447339,NotSig,Cnuella,0.874992432,Bacteroidetes
+Thermoflavifilum,-5.006,10.965,2.11E-06,1.67E-05,Depleted,Thermoflavifilum,5.675717545,Bacteroidetes
+Rubrivirga,2.047,11.966,0.480884987,0.873057095,NotSig,Rubrivirga,0.317958781,Bacteroidetes
+Salisaeta,18.304,15.358,0.061236272,0.165187448,NotSig,Salisaeta,1.212991257,Bacteroidetes
+Salinibacter,-2.65,13.358,1.58E-06,1.30E-05,Depleted,Salinibacter,5.801342913,Bacteroidetes
+Rubricoccus,17.88,14.425,0.001677897,0.00694024,Enriched,Rubricoccus,2.775234702,Bacteroidetes
+Rhodothermus,15.915,12.967,0.187787951,0.419363703,NotSig,Rhodothermus,0.726332277,Bacteroidetes
+Lewinella,-1.139,11.288,0.428193897,0.784380861,NotSig,Lewinella,0.368359527,Bacteroidetes
+Haliscomenobacter,21.146,18.116,0.000221472,0.001141057,Enriched,Haliscomenobacter,3.654681172,Bacteroidetes
+Aureispira,19.978,15.811,0.004616341,0.016719756,Enriched,Aureispira,2.335702118,Bacteroidetes
+Phaeodactylibacter,-0.77,13.964,0.674398126,1,NotSig,Phaeodactylibacter,0.171083645,Bacteroidetes
+Solitalea,0.177,12.135,0.730743031,1,NotSig,Solitalea,0.136235318,Bacteroidetes
+Pedobacter,1.653,15.932,8.69E-07,7.38E-06,Enriched,Pedobacter,6.060980224,Bacteroidetes
+Mucilaginibacter,3.029,13.966,0.136568443,0.328086142,NotSig,Mucilaginibacter,0.864649642,Bacteroidetes
+Olivibacter,5.99,14.393,0.030108481,0.091027125,Enriched,Olivibacter,1.521311154,Bacteroidetes
+Sphingobacterium,18.03,14.136,0.001677595,0.00694024,Enriched,Sphingobacterium,2.775312877,Bacteroidetes
+Arcticibacter,18.651,14.943,0.012784416,0.040450911,Enriched,Arcticibacter,1.893319106,Bacteroidetes
+Parapedobacter,18.368,13.92,0.002782062,0.01087672,Enriched,Parapedobacter,2.555633196,Bacteroidetes
+Achromobacter,7.347,18.746,7.74E-06,5.52E-05,Enriched,Achromobacter,5.111259039,Betaproteobacteria
+Eoetvoesia,13.522,9.966,0.187787951,0.419363703,NotSig,Eoetvoesia,0.726332277,Betaproteobacteria
+Derxia,-1.479,13.609,0.32821073,0.667865844,NotSig,Derxia,0.483847225,Betaproteobacteria
+Paralcaligenes,20.141,14.694,2.87E-05,0.00018117,Enriched,Paralcaligenes,4.542118103,Betaproteobacteria
+Alcaligenes,16.61,13.425,0.012784286,0.040450911,Enriched,Alcaligenes,1.893323522,Betaproteobacteria
+Pusillimonas,1.607,10.966,0.123162594,0.305657428,NotSig,Pusillimonas,0.909521173,Betaproteobacteria
+Candidimonas,19.209,15.032,0.000221492,0.001141057,Enriched,Candidimonas,3.654641955,Betaproteobacteria
+Advenella,1.537,9.967,0.19040691,0.421910964,NotSig,Advenella,0.720317295,Betaproteobacteria
+Castellaniella,4.048,13.425,0.04930236,0.140148343,Enriched,Castellaniella,1.307132291,Betaproteobacteria
+Bordetella,-1.2,9.966,0.354291832,0.667865844,NotSig,Bordetella,0.45063886,Betaproteobacteria
+Pandoraea,3.914,18.064,0.009233327,0.031047273,Enriched,Pandoraea,2.034641784,Betaproteobacteria
+Limnobacter,5.688,17.617,0.000728119,0.00339551,Enriched,Limnobacter,3.137797636,Betaproteobacteria
+Ralstonia,6.55,18.687,1.37E-19,1.15E-17,Enriched,Ralstonia,18.86327943,Betaproteobacteria
+Polynucleobacter,2.585,12.966,0.56470968,0.999802374,NotSig,Polynucleobacter,0.248174768,Betaproteobacteria
+Cupriavidus,1.55,16.366,0.97068947,1,NotSig,Cupriavidus,0.012919682,Betaproteobacteria
+Burkholderia,1.899,16.987,1.75E-08,1.80E-07,Enriched,Burkholderia,7.756961951,Betaproteobacteria
+Lautropia,2.476,12.773,0.001769922,0.007278612,Enriched,Lautropia,2.752045872,Betaproteobacteria
+Chitinimonas,13.522,10.551,0.187787951,0.419363703,NotSig,Chitinimonas,0.726332277,Betaproteobacteria
+Aquabacterium,2.049,17.085,0.03394874,0.100319101,Enriched,Aquabacterium,1.46917634,Betaproteobacteria
+Ideonella,1.836,14.747,0.003152033,0.012091268,Enriched,Ideonella,2.501409244,Betaproteobacteria
+Tepidimonas,-1.982,14.489,8.07E-23,1.92E-20,Depleted,Tepidimonas,22.09312647,Betaproteobacteria
+Sphaerotilus,1.315,11.288,0.092774229,0.241145399,NotSig,Sphaerotilus,1.032572646,Betaproteobacteria
+Thiobacter,-3.259,11.773,2.14E-07,2.01E-06,Depleted,Thiobacter,6.669586227,Betaproteobacteria
+Inhella,13.844,10.551,0.187787951,0.419363703,NotSig,Inhella,0.726332277,Betaproteobacteria
+Methylibium,-1.155,14.137,0.210971967,0.463164612,NotSig,Methylibium,0.675775248,Betaproteobacteria
+Thiomonas,13.522,9.966,0.105759544,0.266173766,NotSig,Thiomonas,0.97568043,Betaproteobacteria
+Hydrogenophaga,3.181,14.799,9.76E-05,0.000539837,Enriched,Hydrogenophaga,4.010550182,Betaproteobacteria
+Ramlibacter,0.853,16.26,0.001241433,0.005467668,Enriched,Ramlibacter,2.906076714,Betaproteobacteria
+Limnohabitans,1.886,15.195,5.28E-07,4.65E-06,Enriched,Limnohabitans,6.277366077,Betaproteobacteria
+Roseateles,2.094,15.666,1.08E-06,9.10E-06,Enriched,Roseateles,5.966576245,Betaproteobacteria
+Acidovorax,4.379,15.425,0.001635325,0.00694024,Enriched,Acidovorax,2.786395924,Betaproteobacteria
+Rhodoferax,1.523,14.747,0.216702869,0.474286801,NotSig,Rhodoferax,0.664135339,Betaproteobacteria
+Diaphorobacter,2.433,12.136,0.008762256,0.029700095,Enriched,Diaphorobacter,2.057384063,Betaproteobacteria
+Zhizhongheella,0.025,13.358,0.124832366,0.309263519,NotSig,Zhizhongheella,0.903672798,Betaproteobacteria
+Schlegelella,-3.177,15.458,1.72E-17,8.46E-16,Depleted,Schlegelella,16.76447155,Betaproteobacteria
+Polaromonas,1.871,15.214,0.018217796,0.056514771,Enriched,Polaromonas,1.739504165,Betaproteobacteria
+Comamonas,1.385,9.967,0.142550785,0.340736969,NotSig,Comamonas,0.846030387,Betaproteobacteria
+Kinneretia,1.202,11.288,0.1069581,0.268713396,NotSig,Kinneretia,0.97078632,Betaproteobacteria
+Xenophilus,-12.722,8.966,0.130123471,0.314726985,NotSig,Xenophilus,0.885644361,Betaproteobacteria
+Pseudorhodoferax,17.25,12.964,0.00101197,0.0045137,Enriched,Pseudorhodoferax,2.994832362,Betaproteobacteria
+Simplicispira,18.236,13.92,0.001677595,0.00694024,Enriched,Simplicispira,2.775312877,Betaproteobacteria
+Noviherbaspirillum,2.312,15.708,2.14E-07,2.01E-06,Enriched,Noviherbaspirillum,6.669586227,Betaproteobacteria
+Massilia,0.441,14.58,8.69E-05,0.000482571,Enriched,Massilia,4.060980224,Betaproteobacteria
+Undibacterium,-11.723,8.966,0.286674213,0.599830062,NotSig,Undibacterium,0.542611371,Betaproteobacteria
+Janthinobacterium,1.226,16.543,2.29E-05,0.000148382,Enriched,Janthinobacterium,4.640164518,Betaproteobacteria
+Duganella,2.048,11.773,0.626486287,1,NotSig,Duganella,0.203088431,Betaproteobacteria
+Herbaspirillum,-1.037,12.136,0.047379799,0.135492933,Depleted,Herbaspirillum,1.324406786,Betaproteobacteria
+Oxalicibacterium,-1.511,12.426,0.280428922,0.599059988,NotSig,Oxalicibacterium,0.552177197,Betaproteobacteria
+Parasutterella,-5.522,14.011,2.95E-10,4.21E-09,Depleted,Parasutterella,9.530177984,Betaproteobacteria
+Ferritrophicum,-2.015,13.611,8.27E-05,0.000460796,Depleted,Ferritrophicum,4.08249449,Betaproteobacteria
+Ferriphaselus,-1.403,12.55,3.96E-08,3.90E-07,Depleted,Ferriphaselus,7.402304814,Betaproteobacteria
+Gallionella,3.5,11.966,0.139226377,0.33390931,NotSig,Gallionella,0.856278478,Betaproteobacteria
+Sideroxydans,2.607,10.966,0.23117887,0.501356,NotSig,Sideroxydans,0.636051863,Betaproteobacteria
+Thiobacillus,2.547,12.55,0.036999904,0.107533326,Enriched,Thiobacillus,1.431799403,Betaproteobacteria
+Hydrogenophilus,15.844,11.965,0.012783122,0.040450911,Enriched,Hydrogenophilus,1.893363066,Betaproteobacteria
+Methylotenera,-1.052,14.609,0.553611366,0.983814967,NotSig,Methylotenera,0.256795002,Betaproteobacteria
+Methylophilus,-2.735,15.785,9.34E-15,2.42E-13,Depleted,Methylophilus,14.02965312,Betaproteobacteria
+Methylovorus,2.706,11.551,0.008711409,0.02959805,Enriched,Methylovorus,2.059911596,Betaproteobacteria
+Methylobacillus,14.693,12.136,0.354056992,0.667865844,NotSig,Methylobacillus,0.450926825,Betaproteobacteria
+Rivicola,2.817,14.323,0.010176677,0.033694008,Enriched,Rivicola,1.992394009,Betaproteobacteria
+Iodobacter,-4.857,12.136,3.31E-17,1.48E-15,Depleted,Iodobacter,16.48017201,Betaproteobacteria
+Aquaspirillum,0.206,13.214,0.539705844,0.96029955,NotSig,Aquaspirillum,0.267842879,Betaproteobacteria
+Formivibrio,-3.448,12.288,0.001715384,0.007074719,Depleted,Formivibrio,2.765638645,Betaproteobacteria
+Pseudogulbenkiania,-0.991,11.967,0.009617571,0.032066059,Depleted,Pseudogulbenkiania,2.016934599,Betaproteobacteria
+Andreprevotia,-12.722,8.966,0.130125383,0.314726985,NotSig,Andreprevotia,0.885637979,Betaproteobacteria
+Uruburuella,12.522,9.966,0.354056992,0.667865844,NotSig,Uruburuella,0.450926825,Betaproteobacteria
+Neisseria,13.845,9.967,0.105759544,0.266173766,NotSig,Neisseria,0.97568043,Betaproteobacteria
+Nitrosospira,0.575,15.409,0.153663185,0.363644054,NotSig,Nitrosospira,0.813430169,Betaproteobacteria
+Nitrosomonas,3.818,13.774,0.005333671,0.019027873,Enriched,Nitrosomonas,2.272973777,Betaproteobacteria
+Spirillum,-0.972,13.137,0.189003978,0.421013781,NotSig,Spirillum,0.723529055,Betaproteobacteria
+Zoogloea,-1.38,15.392,0.00077175,0.003587257,Depleted,Zoogloea,3.112523362,Betaproteobacteria
+Dechloromonas,-0.118,13.667,0.001925203,0.007817595,Depleted,Dechloromonas,2.71552347,Betaproteobacteria
+Azospira,3.785,14.519,0.008584958,0.029307978,Enriched,Azospira,2.066261825,Betaproteobacteria
+Propionivibrio,-0.785,9.967,0.587977151,1,NotSig,Propionivibrio,0.23063955,Betaproteobacteria
+Azovibrio,11.523,8.966,0.354056992,0.667865844,NotSig,Azovibrio,0.450926825,Betaproteobacteria
+Azoarcus,-1.431,12.425,3.85E-05,0.000238834,Depleted,Azoarcus,4.41453927,Betaproteobacteria
+Thauera,0.788,14.096,0.300822046,0.6239434,NotSig,Thauera,0.521690339,Betaproteobacteria
+Sulfuritalea,-1.25,15.115,0.060203379,0.165187448,NotSig,Sulfuritalea,1.220379133,Betaproteobacteria
+Rhodocyclus,-3.2,11.967,0.177949238,0.415603213,NotSig,Rhodocyclus,0.749703867,Betaproteobacteria
+Methyloversatilis,1.675,14.136,0.076926852,0.20480339,NotSig,Methyloversatilis,1.113922039,Betaproteobacteria
+Georgfuchsia,-1.2,9.966,0.183430268,0.419363703,NotSig,Georgfuchsia,0.736528999,Betaproteobacteria
+Denitratisoma,-4.242,15.053,1.97E-20,2.16E-18,Depleted,Denitratisoma,19.70553377,Betaproteobacteria
+Sterolibacterium,-4.058,13.288,0.211569822,0.463763649,NotSig,Sterolibacterium,0.674546279,Betaproteobacteria
+Sulfuriferula,2.418,15.977,0.018663018,0.057698043,Enriched,Sulfuriferula,1.729018125,Betaproteobacteria
+Sulfuricella,-1.047,10.965,0.590019254,1,NotSig,Sulfuricella,0.229133816,Betaproteobacteria
+Alicyclobacillus,-2.706,17.645,1.04E-09,1.30E-08,Depleted,Alicyclobacillus,8.982966661,Firmicutes
+Tumebacillus,-2.69,17.989,5.56E-14,1.20E-12,Depleted,Tumebacillus,13.25492521,Firmicutes
+Kyrpidia,-15.81,9.966,1.14E-05,7.85E-05,Depleted,Kyrpidia,4.943095149,Firmicutes
+Effusibacillus,-5.154,10.966,1.90E-06,1.53E-05,Depleted,Effusibacillus,5.721246399,Firmicutes
+Bacillus,-0.473,18.942,5.27E-07,4.65E-06,Depleted,Bacillus,6.278189385,Firmicutes
+Anoxybacillus,-0.061,14.551,0.555636743,0.986186109,NotSig,Anoxybacillus,0.255209043,Firmicutes
+Fictibacillus,1.211,14.666,0.001288022,0.005655407,Enriched,Fictibacillus,2.890076719,Firmicutes
+Aeribacillus,5.378,15.251,0.463039988,0.846041054,NotSig,Aeribacillus,0.334381502,Firmicutes
+Geobacillus,3.575,15.581,0.610738614,1,NotSig,Geobacillus,0.214144621,Firmicutes
+Domibacillus,-0.615,11.551,0.009246735,0.031047273,Depleted,Domibacillus,2.034011589,Firmicutes
+Caldibacillus,1.8,9.966,0.385499578,0.719095292,NotSig,Caldibacillus,0.413976093,Firmicutes
+Vulcanibacillus,-3.364,15.85,5.65E-09,6.30E-08,Depleted,Vulcanibacillus,8.247951552,Firmicutes
+Ornithinibacillus,0.863,17.115,0.87813181,1,NotSig,Ornithinibacillus,0.05644029,Firmicutes
+Piscibacillus,11.522,8.965,0.354056992,0.667865844,NotSig,Piscibacillus,0.450926825,Firmicutes
+Pullulanibacillus,-1.454,12.136,0.000133129,0.000722337,Depleted,Pullulanibacillus,3.87572733,Firmicutes
+Thalassobacillus,1.365,13.551,0.525474905,0.940844027,NotSig,Thalassobacillus,0.27944802,Firmicutes
+Lentibacillus,0.988,16.418,0.83060381,1,NotSig,Lentibacillus,0.080606081,Firmicutes
+Oceanobacillus,0.575,15.176,0.281402275,0.599655249,NotSig,Oceanobacillus,0.550672396,Firmicutes
+Compostibacillus,2.619,12.872,0.037878846,0.10986405,Enriched,Compostibacillus,1.42160326,Firmicutes
+Pontibacillus,4.183,14.01,0.002922304,0.011331871,Enriched,Pontibacillus,2.534274607,Firmicutes
+Marinococcus,11.523,8.966,0.354056992,0.667865844,NotSig,Marinococcus,0.450926825,Firmicutes
+Sinibacillus,2.67,14.551,0.064334712,0.172566981,NotSig,Sinibacillus,1.191554639,Firmicutes
+Virgibacillus,-0.2,10.966,0.953800138,1,NotSig,Virgibacillus,0.020542619,Firmicutes
+Gracilibacillus,0.478,9.966,0.504001997,0.906949369,NotSig,Gracilibacillus,0.297567743,Firmicutes
+Caldalkalibacillus,0.057,12.288,0.003038361,0.01171822,Enriched,Caldalkalibacillus,2.517360627,Firmicutes
+Calditerricola,-2.579,10.55,9.78E-06,6.81E-05,Depleted,Calditerricola,5.009661145,Firmicutes
+Desulfuribacillus,-1.785,8.966,0.25288511,0.544294196,NotSig,Desulfuribacillus,0.597076741,Firmicutes
+Thermicanus,-4.2,11.772,0.000191719,0.00103021,Depleted,Thermicanus,3.717334845,Firmicutes
+Gemella,-2.784,9.967,4.91E-06,3.65E-05,Depleted,Gemella,5.308918508,Firmicutes
+Exiguobacterium,0.196,14.054,0.389125363,0.724911087,NotSig,Exiguobacterium,0.409910461,Firmicutes
+Paenibacillus,-2.148,14.52,4.22E-15,1.14E-13,Depleted,Paenibacillus,14.37468755,Firmicutes
+Cohnella,-1.841,13.135,1.24E-14,3.02E-13,Depleted,Cohnella,13.90657831,Firmicutes
+Brevibacillus,0.196,13.288,0.003298901,0.012525253,Enriched,Brevibacillus,2.481630717,Firmicutes
+Ammoniibacillus,1.185,13.425,0.332027138,0.667865844,NotSig,Ammoniibacillus,0.478826418,Firmicutes
+Thermobacillus,3.915,12.966,0.118051251,0.295024755,NotSig,Thermobacillus,0.927929406,Firmicutes
+Saccharibacillus,-1.2,9.966,0.921751071,1,NotSig,Saccharibacillus,0.035386349,Firmicutes
+Oxalophagus,-1.97,11.773,3.77E-16,1.33E-14,Depleted,Oxalophagus,15.42365865,Firmicutes
+Aneurinibacillus,-2.761,11.772,2.09E-12,3.79E-11,Depleted,Aneurinibacillus,11.67985371,Firmicutes
+Jeotgalibacillus,-1.603,12.286,1.90E-05,0.000125009,Depleted,Jeotgalibacillus,4.721246399,Firmicutes
+Lysinibacillus,2.477,15.135,0.288321901,0.602394367,NotSig,Lysinibacillus,0.540122367,Firmicutes
+Planococcus,5.179,14.848,7.05E-07,6.10E-06,Enriched,Planococcus,6.151810883,Firmicutes
+Sporosarcina,-2.222,13.288,1.57E-15,4.86E-14,Depleted,Sporosarcina,14.80410035,Firmicutes
+Ureibacillus,0.006,12.773,0.000488392,0.002370529,Enriched,Ureibacillus,3.311231459,Firmicutes
+Psychrobacillus,0.385,11.288,0.583375123,1,NotSig,Psychrobacillus,0.234052095,Firmicutes
+Sporolactobacillaceae_incertae_sedis,2.311,12.551,0.129087947,0.314726985,NotSig,Sporolactobacillaceae_incertae_sedis,0.889114306,Firmicutes
+Staphylococcus,7.694,15.885,1.35E-08,1.43E-07,Enriched,Staphylococcus,7.869666232,Firmicutes
+Laceyella,0.162,14.693,5.33E-06,3.92E-05,Enriched,Laceyella,5.273272791,Firmicutes
+Hazenella,-3.058,11.773,2.40E-10,3.46E-09,Depleted,Hazenella,9.619788758,Firmicutes
+Kroppenstedtia,1.8,12.966,0.815312575,1,NotSig,Kroppenstedtia,0.088675859,Firmicutes
+Melghirimyces,0.247,12.135,0.537126605,0.956903452,NotSig,Melghirimyces,0.269923336,Firmicutes
+Thermoactinomyces,1.431,13.55,0.51111687,0.917438709,NotSig,Thermoactinomyces,0.291479784,Firmicutes
+Shimazuella,-2.058,10.551,0.000192036,0.00103021,Depleted,Shimazuella,3.716617349,Firmicutes
+Thermoflavimicrobium,18.476,15.175,0.001012081,0.0045137,Enriched,Thermoflavimicrobium,2.994784728,Firmicutes
+Planifilum,2.582,15.897,0.294265859,0.613018075,NotSig,Planifilum,0.531260122,Firmicutes
+Mechercharimyces,3.122,12.136,0.125181155,0.309590135,NotSig,Mechercharimyces,0.902461046,Firmicutes
+Aerococcus,12.523,8.967,0.187787951,0.419363703,NotSig,Aerococcus,0.726332277,Firmicutes
+Trichococcus,3.385,10.966,0.230076232,0.499724175,NotSig,Trichococcus,0.638128244,Firmicutes
+Alkalibacterium,11.522,8.965,0.354056992,0.667865844,NotSig,Alkalibacterium,0.450926825,Firmicutes
+Vagococcus,12.522,9.965,0.354056992,0.667865844,NotSig,Vagococcus,0.450926825,Firmicutes
+Enterococcus,16.651,11.773,0.000610354,0.002893807,Enriched,Enterococcus,3.214418205,Firmicutes
+Lactobacillus,8.579,16.799,4.59E-09,5.26E-08,Enriched,Lactobacillus,8.338187314,Firmicutes
+Leuconostoc,10.816,16.652,1.19E-08,1.28E-07,Enriched,Leuconostoc,7.924453039,Firmicutes
+Weissella,17.789,13.873,0.012784286,0.040450911,Enriched,Weissella,1.893323522,Firmicutes
+Lactococcus,17.303,12.873,2.87E-05,0.00018117,Enriched,Lactococcus,4.542118103,Firmicutes
+Streptococcus,2.909,13.551,3.84E-05,0.000238834,Enriched,Streptococcus,4.415668776,Firmicutes
+Catabacter,-3.278,16.146,1.62E-11,2.57E-10,Depleted,Catabacter,10.79048499,Firmicutes
+Clostridium_sensu_stricto,-2.122,17.074,7.54E-20,6.72E-18,Depleted,Clostridium_sensu_stricto,19.12262865,Firmicutes
+Caloramator,-3.216,15.251,7.16E-11,1.10E-09,Depleted,Caloramator,10.14508698,Firmicutes
+Fonticella,-2.686,13.489,4.57E-09,5.26E-08,Depleted,Fonticella,8.3400838,Firmicutes
+Oxobacter,-0.366,13.61,2.03E-06,1.62E-05,Depleted,Oxobacter,5.692503962,Firmicutes
+Thermobrachium,-3.729,12.424,6.36E-10,8.32E-09,Depleted,Thermobrachium,9.196542884,Firmicutes
+Fervidicella,-2.966,10.551,5.89E-05,0.000341886,Depleted,Fervidicella,4.229884705,Firmicutes
+Proteiniclasticum,-3.659,10.551,0.009956801,0.033061273,Depleted,Proteiniclasticum,2.001880173,Firmicutes
+Alkaliphilus,-1.01,13.214,8.97E-06,6.34E-05,Depleted,Alkaliphilus,5.047207557,Firmicutes
+Tindallia,-11.723,8.967,0.286674213,0.599830062,NotSig,Tindallia,0.542611371,Firmicutes
+Caloranaerobacter,-2.118,11.289,0.000638286,0.003006053,Depleted,Caloranaerobacter,3.194984681,Firmicutes
+Anaerosolibacter,-2.808,14.358,5.41E-08,5.22E-07,Depleted,Anaerosolibacter,7.266802735,Firmicutes
+Geosporobacter,-2.659,9.965,0.009571534,0.031987306,Depleted,Geosporobacter,2.019018454,Firmicutes
+Thermovenabulum,-0.441,11.288,0.189941081,0.421533316,NotSig,Thermovenabulum,0.721381095,Firmicutes
+Caldicellulosiruptor,4.009,12.425,0.001583382,0.006805679,Enriched,Caldicellulosiruptor,2.800414296,Firmicutes
+Thermosediminibacter,-7.574,14.579,8.69E-10,1.12E-08,Depleted,Thermosediminibacter,9.060980224,Firmicutes
+Caldanaerovirga,-5.032,12.134,1.77E-08,1.80E-07,Depleted,Caldanaerovirga,7.752026734,Firmicutes
+Thermoanaerobacterium,-3.199,10.551,2.29E-06,1.80E-05,Depleted,Thermoanaerobacterium,5.640164518,Firmicutes
+Caldicoprobacter,-1.254,11.288,1.64E-06,1.35E-05,Depleted,Caldicoprobacter,5.785156152,Firmicutes
+Sedimentibacter,-1.609,12.773,2.27E-05,0.000147691,Depleted,Sedimentibacter,4.643974143,Firmicutes
+Tissierella,-2.437,10.966,0.000348066,0.001748908,Depleted,Tissierella,3.458338398,Firmicutes
+Fusibacter,14.33,11.773,0.354056992,0.667865844,NotSig,Fusibacter,0.450926825,Firmicutes
+Acidaminobacter,-0.522,9.966,0.372130237,0.697805319,NotSig,Acidaminobacter,0.42930504,Firmicutes
+Anaerovorax,0.287,12.873,0.047748429,0.136186557,Enriched,Anaerovorax,1.321040913,Firmicutes
+Mogibacterium,0.648,10.551,0.831281974,1,NotSig,Mogibacterium,0.080251637,Firmicutes
+Anaerobranca,-0.989,11.551,0.016351734,0.050947434,Depleted,Anaerobranca,1.786436186,Firmicutes
+Thermaerobacter,-4.558,12.136,1.15E-13,2.34E-12,Depleted,Thermaerobacter,12.93930216,Firmicutes
+Sulfobacillus,-3.199,9.966,0.036580919,0.106532594,Depleted,Sulfobacillus,1.436745388,Firmicutes
+Symbiobacterium,-2.225,18.282,4.09E-06,3.11E-05,Depleted,Symbiobacterium,5.388276692,Firmicutes
+Eubacterium,-11.723,8.966,0.286674213,0.599830062,NotSig,Eubacterium,0.542611371,Firmicutes
+Garciella,-1.042,13.873,5.71E-05,0.000332748,Depleted,Garciella,4.243363892,Firmicutes
+Gracilibacter,-0.973,15.424,8.36E-11,1.27E-09,Depleted,Gracilibacter,10.07779372,Firmicutes
+Lutispora,-1.41,10.551,0.0011526,0.00510795,Depleted,Lutispora,2.938321385,Firmicutes
+Hydrogenispora,-2.685,15.341,3.81E-16,1.33E-14,Depleted,Hydrogenispora,15.41907502,Firmicutes
+Heliorestis,-2.168,12.426,0.003303079,0.012525253,Depleted,Heliorestis,2.481081039,Firmicutes
+Heliophilum,3.259,10.551,0.083272958,0.219244485,NotSig,Heliophilum,1.079496008,Firmicutes
+Clostridium_XlVa,-1.946,13.666,1.13E-14,2.89E-13,Depleted,Clostridium_XlVa,13.94692156,Firmicutes
+Lachnospiracea_incertae_sedis,14.522,10.551,0.036016418,0.105104214,Enriched,Lachnospiracea_incertae_sedis,1.443499482,Firmicutes
+Roseburia,1.384,8.967,0.390725768,0.725996968,NotSig,Roseburia,0.408127947,Firmicutes
+Coprococcus,11.523,8.966,0.354056992,0.667865844,NotSig,Coprococcus,0.450926825,Firmicutes
+Blautia,11.523,8.966,0.354056992,0.667865844,NotSig,Blautia,0.450926825,Firmicutes
+Desulfosporosinus,-0.856,15.932,9.65E-10,1.21E-08,Depleted,Desulfosporosinus,9.015472687,Firmicutes
+Thermincola,-2.915,14.721,1.54E-09,1.89E-08,Depleted,Thermincola,8.812479279,Firmicutes
+Desulfitobacterium,-1.69,15.651,4.70E-09,5.32E-08,Depleted,Desulfitobacterium,8.327902142,Firmicutes
+Syntrophobotulus,-1.843,13.773,0.001001227,0.0045137,Depleted,Syntrophobotulus,2.999467447,Firmicutes
+Desulfitibacter,-3.248,13.873,4.29E-14,9.42E-13,Depleted,Desulfitibacter,13.36754271,Firmicutes
+Peptococcus,-0.648,11.964,0.005793786,0.020515466,Depleted,Peptococcus,2.23703755,Firmicutes
+Dehalobacter,-0.59,11.288,0.031275181,0.09375984,Depleted,Dehalobacter,1.504800168,Firmicutes
+Desulfotomaculum,1.534,17.579,1.14E-11,1.85E-10,Enriched,Desulfotomaculum,10.94309515,Firmicutes
+Pelotomaculum,-3.136,14.522,2.62E-14,5.95E-13,Depleted,Pelotomaculum,13.58169871,Firmicutes
+Desulfurispora,2.607,13.666,0.210067557,0.461889683,NotSig,Desulfurispora,0.677641015,Firmicutes
+Cryptanaerobacter,-17.58,12.426,5.87E-06,4.29E-05,Depleted,Cryptanaerobacter,5.231361899,Firmicutes
+Sporacetigenium,-3.135,13.966,1.07E-13,2.22E-12,Depleted,Sporacetigenium,12.97061622,Firmicutes
+Clostridium_XI,-2.594,12.966,2.10E-12,3.79E-11,Depleted,Clostridium_XI,11.67778071,Firmicutes
+Romboutsia,-0.414,14.92,0.101410386,0.262160544,NotSig,Romboutsia,0.993917564,Firmicutes
+Terrisporobacter,0.147,15.096,0.158256882,0.372661008,NotSig,Terrisporobacter,0.800637395,Firmicutes
+Intestinibacter,-0.837,10.551,0.281548015,0.599655249,NotSig,Intestinibacter,0.55044753,Firmicutes
+Peptostreptococcaceae_incertae_sedis,12.522,9.965,0.354056992,0.667865844,NotSig,Peptostreptococcaceae_incertae_sedis,0.450926825,Firmicutes
+Clostridium_III,-1.197,16.032,1.53E-11,2.45E-10,Depleted,Clostridium_III,10.81530857,Firmicutes
+Papillibacter,11.522,8.965,0.354056992,0.667865844,NotSig,Papillibacter,0.450926825,Firmicutes
+Sporobacter,0.894,12.55,0.776948775,1,NotSig,Sporobacter,0.109607614,Firmicutes
+Faecalibacterium,14.981,11.551,0.187787951,0.419363703,NotSig,Faecalibacterium,0.726332277,Firmicutes
+Ruminococcus,1.24,10.966,0.622369071,1,NotSig,Ruminococcus,0.205951998,Firmicutes
+Pseudobacteroides,2.269,13.551,0.532911329,0.950580583,NotSig,Pseudobacteroides,0.273345047,Firmicutes
+Acetivibrio,-1.976,12.136,0.000585119,0.002820829,Depleted,Acetivibrio,3.232755799,Firmicutes
+Ethanoligenens,-0.377,11.551,0.921748915,1,NotSig,Ethanoligenens,0.035387365,Firmicutes
+Anaerotruncus,0.385,12.136,0.115099494,0.288659012,NotSig,Anaerotruncus,0.938926586,Firmicutes
+Clostridium_IV,-0.785,12.426,0.003194502,0.012188647,Depleted,Clostridium_IV,2.495596836,Firmicutes
+Intestinimonas,-1.615,9.966,0.128810742,0.314726985,NotSig,Intestinimonas,0.890047918,Firmicutes
+Anaerobacterium,1.385,10.55,0.41500154,0.766115392,NotSig,Anaerobacterium,0.381950292,Firmicutes
+Acetanaerobacterium,13.107,8.966,0.105760704,0.266173766,NotSig,Acetanaerobacterium,0.975675667,Firmicutes
+Cellulosibacter,-2.785,9.966,0.005114205,0.018382797,Depleted,Cellulosibacter,2.291221868,Firmicutes
+Hydrogenoanaerobacterium,14.522,10.966,0.061235623,0.165187448,NotSig,Hydrogenoanaerobacterium,1.212995859,Firmicutes
+Syntrophothermus,1.963,16.58,5.52E-07,4.83E-06,Enriched,Syntrophothermus,6.258060922,Firmicutes
+Syntrophomonas,5.967,16.707,0.030641505,0.092247738,Enriched,Syntrophomonas,1.513689908,Firmicutes
+Natranaerovirga,-0.66,10.55,0.116529168,0.291731796,NotSig,Natranaerovirga,0.933565354,Firmicutes
+Dethiobacter,2.491,14.897,0.796090613,1,NotSig,Dethiobacter,0.099037497,Firmicutes
+Thermacetogenium,3.989,14.135,0.008795317,0.029741512,Enriched,Thermacetogenium,2.055748503,Firmicutes
+Caldanaerobius,-1.185,11.773,1.25E-05,8.54E-05,Depleted,Caldanaerobius,4.903089987,Firmicutes
+Desulfovirgula,-2.981,10.551,4.52E-08,4.42E-07,Depleted,Desulfovirgula,7.344861565,Firmicutes
+Carboxydothermus,14.844,10.551,0.012781829,0.040450911,Enriched,Carboxydothermus,1.893406997,Firmicutes
+Thermoanaerobacter,-2.392,11.551,0.001004132,0.0045137,Depleted,Thermoanaerobacter,2.998209192,Firmicutes
+Moorella,-15.629,9.967,8.26E-05,0.000460796,Depleted,Moorella,4.083019953,Firmicutes
+Turicibacter,0,15.01,0.043514388,0.125191595,NotSig,Turicibacter,1.36136712,Firmicutes
+Catenibacterium,12.522,8.966,0.187787951,0.419363703,NotSig,Catenibacterium,0.726332277,Firmicutes
+Succinispira,14.33,11.774,0.354056992,0.667865844,NotSig,Succinispira,0.450926825,Firmicutes
+Phascolarctobacterium,14.33,10.966,0.105760704,0.266173766,NotSig,Phascolarctobacterium,0.975675667,Firmicutes
+Propionispira,-1.37,11.288,0.001976982,0.007984389,Depleted,Propionispira,2.703997285,Firmicutes
+Sporomusa,0.108,15.136,0.000301706,0.001537622,Enriched,Sporomusa,3.520416053,Firmicutes
+Dialister,0.186,14.424,0.004461757,0.016452008,Enriched,Dialister,2.350494086,Firmicutes
+Anaerosinus,0.063,11.287,0.584152635,1,NotSig,Anaerosinus,0.23347366,Firmicutes
+Pelosinus,-1.823,12.288,6.23E-10,8.24E-09,Depleted,Pelosinus,9.205511953,Firmicutes
+Dendrosporobacter,-2.727,11.966,2.75E-07,2.53E-06,Depleted,Dendrosporobacter,6.560667306,Firmicutes
+Anaeroarcus,13.107,10.55,0.354056992,0.667865844,NotSig,Anaeroarcus,0.450926825,Firmicutes
+Propionispora,-1.604,11.773,0.014204199,0.044548114,Depleted,Propionispora,1.847583252,Firmicutes
+Megasphaera,-4.591,9.967,1.54E-05,0.000103392,Depleted,Megasphaera,4.812479279,Firmicutes
+Veillonella,-1.161,10.966,0.001380114,0.006041173,Depleted,Veillonella,2.860085039,Firmicutes
+Anaerospora,-2.2,11.551,0.012230917,0.039577138,Depleted,Anaerospora,1.912540981,Firmicutes
+Sporolituus,1.424,13.357,0.881573218,1,NotSig,Sporolituus,0.054741612,Firmicutes
+Acetonema,-0.352,10.551,0.586754343,1,NotSig,Acetonema,0.231543687,Firmicutes
+Megamonas,11.521,8.964,0.354056992,0.667865844,NotSig,Megamonas,0.450926825,Firmicutes
+Pectinatus,-15.529,10.55,0.001137748,0.005057841,Depleted,Pectinatus,2.943953919,Firmicutes
+Anaerovibrio,3.122,9.967,0.049907139,0.141585461,Enriched,Anaerovibrio,1.301837326,Firmicutes
+Thermolithobacter,-5.39,10.967,1.89E-11,2.96E-10,Depleted,Thermolithobacter,10.7235382,Firmicutes
+Acidithiobacillus,4.754,13.824,0.000726687,0.00339551,Enriched,Acidithiobacillus,3.138652609,Gammaproteobacteria
+Aeromonas,5.788,12.772,1.27E-06,1.05E-05,Enriched,Aeromonas,5.896196279,Gammaproteobacteria
+Tolumonas,-16.892,10.551,1.59E-09,1.93E-08,Depleted,Tolumonas,8.798602876,Gammaproteobacteria
+Oceanimonas,13.107,10.551,0.354056992,0.667865844,NotSig,Oceanimonas,0.450926825,Gammaproteobacteria
+Marinobacter,3.259,13.136,0.189116912,0.421013781,NotSig,Marinobacter,0.723269632,Gammaproteobacteria
+Paraglaciecola,16.982,13.214,0.036016791,0.105104214,Enriched,Paraglaciecola,1.443494984,Gammaproteobacteria
+Microbulbifer,1.121,10.965,0.896681585,1,NotSig,Microbulbifer,0.047361749,Gammaproteobacteria
+Haliea,-0.31,11.774,0.424237595,0.778132453,NotSig,Haliea,0.372390848,Gammaproteobacteria
+Alishewanella,16.429,12.136,0.001677847,0.00694024,Enriched,Alishewanella,2.775247644,Gammaproteobacteria
+Marinimicrobium,17.277,14.52,0.061235623,0.165187448,NotSig,Marinimicrobium,1.212995859,Gammaproteobacteria
+Pseudomaricurvus,15.61,12.425,0.061236272,0.165187448,NotSig,Pseudomaricurvus,1.212991257,Gammaproteobacteria
+Colwellia,-0.522,9.966,0.819934956,1,NotSig,Colwellia,0.086220598,Gammaproteobacteria
+Paraferrimonas,-0.963,13.359,0.923393885,1,NotSig,Paraferrimonas,0.034613006,Gammaproteobacteria
+Idiomarina,14.329,10.55,0.105760704,0.266173766,NotSig,Idiomarina,0.975675667,Gammaproteobacteria
+Pseudoalteromonas,-15.722,9.967,4.28E-05,0.000259632,Depleted,Pseudoalteromonas,4.368556231,Gammaproteobacteria
+Shewanella,16.88,12.666,0.000367676,0.00182914,Enriched,Shewanella,3.434534718,Gammaproteobacteria
+Rheinheimera,0.975,13.92,0.010800318,0.03567605,Enriched,Rheinheimera,1.966563457,Gammaproteobacteria
+Thiolamprovum,21.166,16.417,0.012784416,0.040450911,Enriched,Thiolamprovum,1.893319106,Gammaproteobacteria
+Thiohalobacter,-1.436,11.967,0.196626355,0.433672038,NotSig,Thiohalobacter,0.706358272,Gammaproteobacteria
+Halochromatium,-0.536,15.195,2.66E-07,2.46E-06,Depleted,Halochromatium,6.575118363,Gammaproteobacteria
+Nitrosococcus,-2.195,12.424,1.04E-17,5.51E-16,Depleted,Nitrosococcus,16.98296666,Gammaproteobacteria
+Thiodictyon,11.523,8.966,0.354056992,0.667865844,NotSig,Thiodictyon,0.450926825,Gammaproteobacteria
+Thiohalomonas,0.8,11.55,0.397399984,0.736480229,NotSig,Thiohalomonas,0.400772155,Gammaproteobacteria
+Ectothiorhodospira,-1.392,13.55,0.004926758,0.017798692,Depleted,Ectothiorhodospira,2.30743877,Gammaproteobacteria
+Ectothiorhodosinus,-2.522,8.967,0.067416355,0.180493693,NotSig,Ectothiorhodosinus,1.171234732,Gammaproteobacteria
+Halorhodospira,-3.744,14.638,1.06E-08,1.15E-07,Depleted,Halorhodospira,7.974694135,Gammaproteobacteria
+Spiribacter,12.522,8.966,0.187785755,0.419363703,NotSig,Spiribacter,0.726337355,Gammaproteobacteria
+Thioalkalivibrio,-0.256,12.966,0.522240972,0.936228477,NotSig,Thioalkalivibrio,0.282129059,Gammaproteobacteria
+Acidiferrobacter,-0.407,10.551,0.307169263,0.634342314,NotSig,Acidiferrobacter,0.512622244,Gammaproteobacteria
+Arhodomonas,-2.784,10.966,0.0175307,0.054501761,Depleted,Arhodomonas,1.756200742,Gammaproteobacteria
+Natronocella,17.61,12.773,0.001012172,0.0045137,Enriched,Natronocella,2.994745681,Gammaproteobacteria
+Granulosicoccus,-2.915,13.135,1.19E-06,9.95E-06,Depleted,Granulosicoccus,5.924453039,Gammaproteobacteria
+Halothiobacillus,-0.288,11.287,0.297468322,0.618786146,NotSig,Halothiobacillus,0.526559276,Gammaproteobacteria
+Thioprofundum,-0.2,10.551,0.367314269,0.689696838,NotSig,Thioprofundum,0.4349622,Gammaproteobacteria
+Lelliottia,8.696,18.38,4.16E-12,7.32E-11,Enriched,Lelliottia,11.38090667,Gammaproteobacteria
+Pantoea,7.614,15.581,1.25E-14,3.02E-13,Enriched,Pantoea,13.90308999,Gammaproteobacteria
+Siccibacter,7.234,14.096,3.69E-07,3.37E-06,Enriched,Siccibacter,6.432973634,Gammaproteobacteria
+Escherichia/Shigella,9.414,16.594,4.05E-17,1.75E-15,Enriched,Escherichia/Shigella,16.39254498,Gammaproteobacteria
+Yersinia,1.303,11.288,0.16721905,0.393116285,NotSig,Yersinia,0.776714248,Gammaproteobacteria
+Halioglobus,0.648,9.966,0.488113254,0.882810664,NotSig,Halioglobus,0.3114794,Gammaproteobacteria
+Litorivivens,15.522,11.551,0.061236272,0.165187448,NotSig,Litorivivens,1.212991257,Gammaproteobacteria
+Congregibacter,11.523,8.966,0.354056992,0.667865844,NotSig,Congregibacter,0.450926825,Gammaproteobacteria
+Eionea,0.8,9.967,0.901696251,1,NotSig,Eionea,0.044939736,Gammaproteobacteria
+Gallaecimonas,11.522,8.965,0.354056992,0.667865844,NotSig,Gallaecimonas,0.450926825,Gammaproteobacteria
+Diplorickettsia,6.587,17.785,0.000975432,0.004475695,Enriched,Diplorickettsia,3.010803001,Gammaproteobacteria
+Aquicella,1.312,13.873,0.24378624,0.52629798,NotSig,Aquicella,0.612990811,Gammaproteobacteria
+Coxiella,5.009,11.55,0.001478468,0.006393254,Enriched,Coxiella,2.830188071,Gammaproteobacteria
+Legionella,-0.795,13.666,0.008657844,0.02948626,Depleted,Legionella,2.062590244,Gammaproteobacteria
+Methylothermus,11.523,8.966,0.354056992,0.667865844,NotSig,Methylothermus,0.450926825,Gammaproteobacteria
+Methylomicrobium,8.746,16.116,1.38E-05,9.35E-05,Enriched,Methylomicrobium,4.860120914,Gammaproteobacteria
+Methylobacter,8.913,16.76,0.001436624,0.006250191,Enriched,Methylobacter,2.842656883,Gammaproteobacteria
+Methylocaldum,20.791,17.24,0.00022147,0.001141057,Enriched,Methylocaldum,3.654685094,Gammaproteobacteria
+Methylovulum,16.692,12.773,0.004616156,0.016719756,Enriched,Methylovulum,2.335719523,Gammaproteobacteria
+Methylomonas,2.608,11.551,0.642847967,1,NotSig,Methylomonas,0.191891725,Gammaproteobacteria
+Methylococcus,1.258,14.25,0.122747834,0.30556871,NotSig,Methylococcus,0.910986163,Gammaproteobacteria
+Alcanivorax,3.075,16.135,0.10297202,0.265236593,NotSig,Alcanivorax,0.987280768,Gammaproteobacteria
+Halomonas,2.289,14.424,0.009962402,0.033061273,Enriched,Halomonas,2.001635938,Gammaproteobacteria
+Cobetia,11.523,8.966,0.354056992,0.667865844,NotSig,Cobetia,0.450926825,Gammaproteobacteria
+Chromohalobacter,-1.107,10.551,0.406089399,0.751607746,NotSig,Chromohalobacter,0.391378348,Gammaproteobacteria
+Larsenimonas,-4.131,13.489,5.45E-05,0.000320165,Depleted,Larsenimonas,4.263603498,Gammaproteobacteria
+Marinomonas,7.113,16.01,0.004046492,0.014998298,Enriched,Marinomonas,2.392921314,Gammaproteobacteria
+Marinobacterium,12.522,8.966,0.187785755,0.419363703,NotSig,Marinobacterium,0.726337355,Gammaproteobacteria
+Pseudohongiella,4.554,13.053,0.018680095,0.057698043,Enriched,Pseudohongiella,1.728620919,Gammaproteobacteria
+Saccharospirillum,-16.477,12.426,0.016003452,0.049971391,Depleted,Saccharospirillum,1.795786328,Gammaproteobacteria
+Haemophilus,15.107,11.288,0.02138859,0.065223581,Enriched,Haemophilus,1.669817844,Gammaproteobacteria
+Psychrobacter,8.266,15.977,0.004001256,0.014869252,Enriched,Psychrobacter,2.397803662,Gammaproteobacteria
+Acinetobacter,9.069,17.86,9.66E-25,3.45E-22,Enriched,Acinetobacter,24.01502287,Gammaproteobacteria
+Alkanindiges,16.223,11.288,7.99E-05,0.000451096,Enriched,Alkanindiges,4.097453221,Gammaproteobacteria
+Moraxella,8.562,14.873,3.67E-08,3.64E-07,Enriched,Moraxella,7.435333936,Gammaproteobacteria
+Enhydrobacter,5.26,13.824,0.000384349,0.001904396,Enriched,Enhydrobacter,3.415274245,Gammaproteobacteria
+Paraperlucidibaca,18.122,14.288,0.007672211,0.026445036,Enriched,Paraperlucidibaca,2.115079462,Gammaproteobacteria
+Perlucidibaca,14.107,9.966,0.061235623,0.165187448,NotSig,Perlucidibaca,1.212995859,Gammaproteobacteria
+Pseudomonas,3.708,18.81,1.96E-32,9.34E-30,Enriched,Pseudomonas,31.70774393,Gammaproteobacteria
+Azotobacter,6.098,16.105,9.22E-10,1.16E-08,Enriched,Azotobacter,9.035269079,Gammaproteobacteria
+Rhizobacter,1.792,13.92,0.56912806,1,NotSig,Rhizobacter,0.244790002,Gammaproteobacteria
+Cellvibrio,4.161,13.61,7.38E-07,6.34E-06,Enriched,Cellvibrio,6.131943638,Gammaproteobacteria
+Methylophaga,11.522,8.965,0.354056992,0.667865844,NotSig,Methylophaga,0.450926825,Gammaproteobacteria
+Thiomicrospira,-2.163,11.967,0.000109747,0.000600035,Depleted,Thiomicrospira,3.959607343,Gammaproteobacteria
+Algiphilus,13.522,10.965,0.354056992,0.667865844,NotSig,Algiphilus,0.450926825,Gammaproteobacteria
+Steroidobacter,-2.649,16.707,0.000296493,0.001516469,Depleted,Steroidobacter,3.527985556,Gammaproteobacteria
+Solimonas,4.409,17.214,0.081169967,0.214499153,NotSig,Solimonas,1.090604631,Gammaproteobacteria
+Nevskia,6.93,14.458,0.001453169,0.006302956,Enriched,Nevskia,2.837683875,Gammaproteobacteria
+Povalibacter,-0.502,14.58,0.006032585,0.021255554,Depleted,Povalibacter,2.21949655,Gammaproteobacteria
+Panacagrimonas,0.358,14.872,0.557327252,0.98795775,NotSig,Panacagrimonas,0.25388972,Gammaproteobacteria
+Hydrocarboniphaga,5.31,14.426,0.007178619,0.024985095,Enriched,Hydrocarboniphaga,2.143959096,Gammaproteobacteria
+Alkanibacter,3.754,13.49,0.011028746,0.03626272,Enriched,Alkanibacter,1.957473865,Gammaproteobacteria
+Fontimonas,4.706,11.772,0.002468229,0.009838445,Enriched,Fontimonas,2.607614549,Gammaproteobacteria
+Rhodanobacter,-1.66,17.983,0.003424213,0.012892749,Depleted,Rhodanobacter,2.465439228,Gammaproteobacteria
+Metallibacterium,-3.575,17.306,0.002750467,0.01087672,Depleted,Metallibacterium,2.560593561,Gammaproteobacteria
+Dokdonella,-2.752,17.26,0.011898086,0.038675554,Depleted,Dokdonella,1.924522896,Gammaproteobacteria
+Stenotrophomonas,8.359,17.965,9.51E-17,3.99E-15,Enriched,Stenotrophomonas,16.02181948,Gammaproteobacteria
+Oleiagrimonas,-1.784,8.967,0.254209075,0.546319804,NotSig,Oleiagrimonas,0.59480895,Gammaproteobacteria
+Luteimonas,0.036,14.458,0.280051378,0.599059988,NotSig,Luteimonas,0.552762286,Gammaproteobacteria
+Thermomonas,0.772,11.966,0.985811445,1,NotSig,Thermomonas,0.006206144,Gammaproteobacteria
+Lysobacter,1.906,16.835,8.22E-05,0.000460796,Enriched,Lysobacter,4.085128182,Gammaproteobacteria
+Arenimonas,0.407,14.424,0.833646555,1,NotSig,Arenimonas,0.07901804,Gammaproteobacteria
+Pseudoxanthomonas,5.251,17.27,3.61E-13,7.06E-12,Enriched,Pseudoxanthomonas,12.4424928,Gammaproteobacteria
+Dyella,-0.413,13.425,0.044505383,0.127785074,Depleted,Dyella,1.351587457,Gammaproteobacteria
+Aspromonas,1.836,11.966,0.129796748,0.314726985,NotSig,Aspromonas,0.886736188,Gammaproteobacteria
+Aquimonas,15.844,12.425,0.187787951,0.419363703,NotSig,Aquimonas,0.726332277,Gammaproteobacteria
+Silanimonas,11.523,8.967,0.354056992,0.667865844,NotSig,Silanimonas,0.450926825,Gammaproteobacteria
+Rudaea,-2.647,12.873,1.29E-14,3.08E-13,Depleted,Rudaea,13.88941029,Gammaproteobacteria
+Tahibacter,0.385,9.966,0.601229498,1,NotSig,Tahibacter,0.22095972,Gammaproteobacteria
+Chiayiivirga,3.607,11.288,0.051235425,0.144491999,NotSig,Chiayiivirga,1.290429657,Gammaproteobacteria
+Vulcaniibacterium,0.063,10.551,0.610495723,1,NotSig,Vulcaniibacterium,0.214317374,Gammaproteobacteria
+Phycisphaera,-0.012,12.426,0.352398733,0.667865844,NotSig,Phycisphaera,0.452965662,Planctomycetes
+Tepidisphaera,1.281,16.185,0.954142597,1,NotSig,Tepidisphaera,0.020386715,Planctomycetes
+Candidatus_Anammoxoglobus,-4.784,10.549,7.95E-06,5.64E-05,Depleted,Candidatus_Anammoxoglobus,5.099632871,Planctomycetes
+Rhodopirellula,-0.144,14.848,0.532499085,0.950580583,NotSig,Rhodopirellula,0.273681134,Planctomycetes
+Blastopirellula,-1.654,15.01,6.44E-19,4.18E-17,Depleted,Blastopirellula,18.19111413,Planctomycetes
+Pirellula,-0.543,14.694,0.005357061,0.019063655,Depleted,Pirellula,2.271073408,Planctomycetes
+Gimesia,-1.749,13.136,1.17E-10,1.71E-09,Depleted,Gimesia,9.931814138,Planctomycetes
+Singulisphaera,-0.537,14.638,0.000413618,0.002025286,Depleted,Singulisphaera,3.38340057,Planctomycetes
+Thermogutta,-0.888,14.095,0.000983764,0.004499459,Depleted,Thermogutta,3.007109074,Planctomycetes
+Rubinisphaera,-0.67,13.966,0.136174831,0.327692215,NotSig,Rubinisphaera,0.865903155,Planctomycetes
+Schlesneria,-2.522,10.966,0.178719488,0.416720114,NotSig,Schlesneria,0.747828088,Planctomycetes
+Zavarzinella,-1.68,15.156,5.72E-12,9.83E-11,Depleted,Zavarzinella,11.24260397,Planctomycetes
+Gemmata,-2.522,14.053,2.39E-33,1.71E-30,Depleted,Gemmata,32.6216021,Planctomycetes
+Aquisphaera,-0.866,14.323,6.49E-09,7.18E-08,Depleted,Aquisphaera,8.187755303,Planctomycetes
+Planctopirus,-0.288,12.666,0.692118465,1,NotSig,Planctopirus,0.159819564,Planctomycetes
+Isosphaera,-16.97,10.966,1.30E-08,1.38E-07,Depleted,Isosphaera,7.886056648,Planctomycetes
+Telmatocola,11.523,8.966,0.354056992,0.667865844,NotSig,Telmatocola,0.450926825,Planctomycetes
+Opitutus,-0.094,16.032,0.094581011,0.245394733,NotSig,Opitutus,1.024196048,Verrucomicrobia
+Cerasicoccus,-3.66,12.136,0.002110889,0.008485178,Depleted,Cerasicoccus,2.675534603,Verrucomicrobia
+Spartobacteria_genera_incertae_sedis,-0.803,17.504,0.005160994,0.01850437,Depleted,Spartobacteria_genera_incertae_sedis,2.287266646,Verrucomicrobia
+Terrimicrobium,0.652,15.536,0.153058541,0.362814848,NotSig,Terrimicrobium,0.815142431,Verrucomicrobia
+Subdivision3_genera_incertae_sedis,-0.544,13.874,0.241253472,0.521619249,NotSig,Subdivision3_genera_incertae_sedis,0.617526428,Verrucomicrobia
+Rubritalea,17.166,12.666,0.001677562,0.00694024,Enriched,Rubritalea,2.77532142,Verrucomicrobia
+Roseibacillus,13.523,10.967,0.354056992,0.667865844,NotSig,Roseibacillus,0.450926825,Verrucomicrobia
+Prosthecobacter,-0.863,10.966,0.057530854,0.160032221,NotSig,Prosthecobacter,1.240099179,Verrucomicrobia
+Brevifollis,0.385,9.965,0.899188679,1,NotSig,Brevifollis,0.04614917,Verrucomicrobia
+Luteolibacter,1.377,13.92,0.085160774,0.222980595,NotSig,Luteolibacter,1.0697604,Verrucomicrobia
+Roseimicrobium,-2.016,13.052,0.376741204,0.705524538,NotSig,Roseimicrobium,0.423956879,Verrucomicrobia
+Akkermansia,-0.989,12.425,0.906818066,1,NotSig,Akkermansia,0.042479836,Verrucomicrobia
+Armatimonas/Armatimonadetes_gp1,-4.976,12.966,3.14E-17,1.45E-15,Depleted,Armatimonas/Armatimonadetes_gp1,16.50307035,ZLow Abundance
+Chthonomonas/Armatimonadetes_gp3,-2.61,12.665,9.52E-12,1.56E-10,Depleted,Chthonomonas/Armatimonadetes_gp3,11.02136305,ZLow Abundance
+Armatimonadetes_gp5,-2.501,12.288,0.00090661,0.004186836,Depleted,Armatimonadetes_gp5,3.042579495,ZLow Abundance
+Armatimonadetes_gp2,-0.512,14.175,0.000574319,0.002778148,Depleted,Armatimonadetes_gp2,3.240846816,ZLow Abundance
+Armatimonadetes_gp6,-3.862,14.135,1.98E-17,9.40E-16,Depleted,Armatimonadetes_gp6,16.70333481,ZLow Abundance
+Armatimonadetes_gp4,-2.646,15.175,3.51E-10,4.91E-09,Depleted,Armatimonadetes_gp4,9.454692884,ZLow Abundance
+Atribacteria_genera_incertae_sedis,-2.483,11.551,4.57E-07,4.12E-06,Depleted,Atribacteria_genera_incertae_sedis,6.3400838,ZLow Abundance
+BRC1_genera_incertae_sedis,-2.516,13.359,5.23E-07,4.65E-06,Depleted,BRC1_genera_incertae_sedis,6.281498311,ZLow Abundance
+WPS-1_genera_incertae_sedis,-0.421,14.01,3.92E-06,2.99E-05,Depleted,WPS-1_genera_incertae_sedis,5.406713933,ZLow Abundance
+WPS-2_genera_incertae_sedis,-2.839,15.638,1.18E-14,2.97E-13,Depleted,WPS-2_genera_incertae_sedis,13.92811799,ZLow Abundance
+Saccharibacteria_genera_incertae_sedis,1.688,18.16,0.059451188,0.164578795,NotSig,Saccharibacteria_genera_incertae_sedis,1.225839463,ZLow Abundance
+Parachlamydia,11.523,8.966,0.354056992,0.667865844,NotSig,Parachlamydia,0.450926825,ZLow Abundance
+Neochlamydia,0.885,12.773,0.594287519,1,NotSig,Neochlamydia,0.226003391,ZLow Abundance
+Simkania,15.33,11.966,0.061235623,0.165187448,NotSig,Simkania,1.212995859,ZLow Abundance
+Prosthecochloris,-3.842,11.966,0.00532591,0.019027873,Depleted,Prosthecochloris,2.273606177,ZLow Abundance
+Longilinea,-0.538,14.323,0.006991012,0.024451408,Depleted,Longilinea,2.155459952,ZLow Abundance
+Ornatilinea,-1.473,14.323,4.18E-05,0.000254733,Depleted,Ornatilinea,4.378823718,ZLow Abundance
+Thermomarinilinea,-2.671,15.581,0.089038862,0.232707796,NotSig,Thermomarinilinea,1.050420399,ZLow Abundance
+Bellilinea,-2.411,14.944,0.170093591,0.398560844,NotSig,Bellilinea,0.76931205,ZLow Abundance
+Leptolinea,-1.533,12.965,0.205522328,0.452593151,NotSig,Leptolinea,0.687140989,ZLow Abundance
+Levilinea,-0.2,8.965,0.925296811,1,NotSig,Levilinea,0.033718935,ZLow Abundance
+Litorilinea,0.459,16.341,0.148945425,0.354833257,NotSig,Litorilinea,0.826972832,ZLow Abundance
+Chloroflexus,-2.549,15.442,2.45E-14,5.65E-13,Depleted,Chloroflexus,13.61083392,ZLow Abundance
+Roseiflexus,-4.287,11.551,0.000716737,0.00336442,Depleted,Roseiflexus,3.144640175,ZLow Abundance
+Oscillochloris,-3.936,11.773,0.000405157,0.001995193,Depleted,Oscillochloris,3.392376653,ZLow Abundance
+Herpetosiphon,-11.723,8.966,0.286674213,0.599830062,NotSig,Herpetosiphon,0.542611371,ZLow Abundance
+Kallotenue,-17.246,13.721,0.130125383,0.314726985,NotSig,Kallotenue,0.885637979,ZLow Abundance
+Ktedonobacter,-3.493,17.25,2.55E-18,1.52E-16,Depleted,Ktedonobacter,17.59345982,ZLow Abundance
+Thermosporothrix,-0.554,17.496,3.70E-14,8.25E-13,Depleted,Thermosporothrix,13.43179828,ZLow Abundance
+Thermogemmatispora,-3.859,13.966,3.38E-18,1.93E-16,Depleted,Thermogemmatispora,17.4710833,ZLow Abundance
+Nitrolancea,0.437,16.165,0.00345984,0.012992611,Enriched,Nitrolancea,2.460943985,ZLow Abundance
+Sphaerobacter,-0.387,13.666,0.002670258,0.010614089,Depleted,Sphaerobacter,2.573446775,ZLow Abundance
+Caldithrix,-1.522,9.966,0.026260745,0.079732092,Depleted,Caldithrix,1.580692957,ZLow Abundance
+Deinococcus,5.181,16.998,0.033814667,0.100319101,Enriched,Deinococcus,1.470894885,ZLow Abundance
+Deinobacterium,16.651,13.551,0.105760704,0.266173766,NotSig,Deinobacterium,0.975675667,ZLow Abundance
+Truepera,-1.503,13.214,0.152963653,0.362814848,NotSig,Truepera,0.815411753,ZLow Abundance
+Methanobacterium,13.107,8.966,0.105759544,0.266173766,NotSig,Methanobacterium,0.97568043,ZLow Abundance
+Methanocella,-3.058,13.824,1.19E-06,9.95E-06,Depleted,Methanocella,5.924453039,ZLow Abundance
+Methanoregula,-0.199,8.966,0.928844777,1,NotSig,Methanoregula,0.032056857,ZLow Abundance
+Methanothrix,-12.722,8.967,0.130125383,0.314726985,NotSig,Methanothrix,0.885637979,ZLow Abundance
+Cetobacterium,14.692,10.966,0.061235623,0.165187448,NotSig,Cetobacterium,1.212995859,ZLow Abundance
+Ilyobacter,13.108,10.551,0.354056992,0.667865844,NotSig,Ilyobacter,0.450926825,ZLow Abundance
+Gemmatimonas,-0.996,16.27,5.18E-08,5.03E-07,Depleted,Gemmatimonas,7.28567024,ZLow Abundance
+Melioribacter,0.356,14.721,0.291966266,0.609116757,NotSig,Melioribacter,0.534667324,ZLow Abundance
+Ignavibacterium,-0.489,13.873,0.003309054,0.012525253,Depleted,Ignavibacterium,2.480296146,ZLow Abundance
+Latescibacteria_genera_incertae_sedis,-1.971,14.897,8.61E-12,1.43E-10,Depleted,Latescibacteria_genera_incertae_sedis,11.06499685,ZLow Abundance
+Nitrospira,-0.922,13.551,4.95E-06,3.66E-05,Depleted,Nitrospira,5.305394801,ZLow Abundance
+Thermodesulfovibrio,-3.644,13.72,0.971568013,1,NotSig,Thermodesulfovibrio,0.012526792,ZLow Abundance
+Parcubacteria_genera_incertae_sedis,1.154,11.288,0.364707912,0.686593918,NotSig,Parcubacteria_genera_incertae_sedis,0.438054815,ZLow Abundance
+Peredibacter,1.267,11.551,0.054556188,0.152650354,NotSig,Peredibacter,1.263155983,ZLow Abundance
+Bacteriovorax,-0.2,9.966,0.490127457,0.883095809,NotSig,Bacteriovorax,0.309690968,ZLow Abundance
+Vampirovibrio,0.504,14.458,0.482238108,0.874401245,NotSig,Vampirovibrio,0.316738473,ZLow Abundance
+Bdellovibrio,3.033,13.425,0.06786354,0.181350696,NotSig,Bdellovibrio,1.16836349,ZLow Abundance
+Desulfonema,2.925,12.424,0.00010095,0.000554062,Enriched,Desulfonema,3.995893677,ZLow Abundance
+Desulfococcus,-12.722,8.967,0.130125383,0.314726985,NotSig,Desulfococcus,0.885637979,ZLow Abundance
+Desulfatiglans,-3.177,13.135,0.98921434,1,NotSig,Desulfatiglans,0.004709597,ZLow Abundance
+Desulfatibacillum,0.799,9.967,0.390725768,0.725996968,NotSig,Desulfatibacillum,0.408127947,ZLow Abundance
+Desulfosalsimonas,-0.201,9.966,0.490127457,0.883095809,NotSig,Desulfosalsimonas,0.309690968,ZLow Abundance
+Desulforhopalus,-12.722,8.966,0.130125383,0.314726985,NotSig,Desulforhopalus,0.885637979,ZLow Abundance
+Desulfobulbus,-0.562,12.136,0.787796657,1,NotSig,Desulfobulbus,0.103585866,ZLow Abundance
+Desulfoprunum,-13.308,8.967,0.063092403,0.169553408,NotSig,Desulfoprunum,1.200022931,ZLow Abundance
+Desulfonatronospira,1.674,10.551,0.195016623,0.431455382,NotSig,Desulfonatronospira,0.709928368,ZLow Abundance
+Desulfonauticus,-3.37,11.287,4.89E-06,3.65E-05,Depleted,Desulfonauticus,5.310691141,ZLow Abundance
+Desulfohalobium,-0.615,10.551,0.186709102,0.419363703,NotSig,Desulfohalobium,0.72883451,ZLow Abundance
+Desulfovermiculus,0.732,13.053,0.344468533,0.667865844,NotSig,Desulfovermiculus,0.462850444,ZLow Abundance
+Desulfomicrobium,11.522,8.965,0.354056992,0.667865844,NotSig,Desulfomicrobium,0.450926825,ZLow Abundance
+Desulfovibrio,-0.359,12.774,1.60E-05,0.000106819,Depleted,Desulfovibrio,4.795880017,ZLow Abundance
+Hippea,0.385,9.966,0.612082452,1,NotSig,Hippea,0.213190071,ZLow Abundance
+Desulfuromusa,1.8,10.551,0.189745634,0.421533316,NotSig,Desulfuromusa,0.721828208,ZLow Abundance
+Pelobacter,-2.785,11.551,4.33E-06,3.27E-05,Depleted,Pelobacter,5.363512104,ZLow Abundance
+Desulfuromonas,-1.309,12.288,1.54E-13,3.10E-12,Depleted,Desulfuromonas,12.81247928,ZLow Abundance
+Geobacter,-3.193,15.551,3.10E-09,3.66E-08,Depleted,Geobacter,8.508638306,ZLow Abundance
+Geoalkalibacter,1.414,14.214,0.050418673,0.142752871,NotSig,Geoalkalibacter,1.297408589,ZLow Abundance
+Anaeromyxobacter,-3.531,15.551,9.22E-09,1.01E-07,Depleted,Anaeromyxobacter,8.035269079,ZLow Abundance
+Cystobacter,-1.106,14.775,5.73E-13,1.09E-11,Depleted,Cystobacter,12.24184538,ZLow Abundance
+Archangium,0.281,12.966,0.584586856,1,NotSig,Archangium,0.233150954,ZLow Abundance
+Haliangium,-2.187,14.009,2.32E-20,2.21E-18,Depleted,Haliangium,19.63451202,ZLow Abundance
+Kofleria,-0.141,12.966,0.000842531,0.003903544,Depleted,Kofleria,3.074414111,ZLow Abundance
+Labilithrix,-1.288,11.772,3.21E-06,2.48E-05,Depleted,Labilithrix,5.493494968,ZLow Abundance
+Aggregicoccus,-0.236,11.55,0.011154067,0.036590469,Depleted,Aggregicoccus,1.952566751,ZLow Abundance
+Corallococcus,1.516,11.551,0.479650626,0.871925406,NotSig,Corallococcus,0.319074984,ZLow Abundance
+Pseudenhygromyxa,0.8,8.966,0.650715783,1,NotSig,Pseudenhygromyxa,0.186608659,ZLow Abundance
+Enhygromyxa,0.048,10.966,0.701929433,1,NotSig,Enhygromyxa,0.153706547,ZLow Abundance
+Phaselicystis,0.492,13.966,0.331929932,0.667865844,NotSig,Phaselicystis,0.478953583,ZLow Abundance
+Minicystis,-2.265,12.966,2.64E-16,9.92E-15,Depleted,Minicystis,15.57839607,ZLow Abundance
+Byssovorax,-0.926,14.009,5.12E-07,4.60E-06,Depleted,Byssovorax,6.290730039,ZLow Abundance
+Chondromyces,-0.794,12.426,0.000914128,0.004207938,Depleted,Chondromyces,3.038992988,ZLow Abundance
+Polyangium,-0.318,14.134,3.23E-09,3.78E-08,Depleted,Polyangium,8.490797478,ZLow Abundance
+Jahnella,-0.596,10.966,0.320031619,0.659949596,NotSig,Jahnella,0.494807111,ZLow Abundance
+Sorangium,-1.928,12.288,2.31E-09,2.75E-08,Depleted,Sorangium,8.63638802,ZLow Abundance
+Sandaracinus,1.701,14.053,0.089949249,0.234657363,NotSig,Sandaracinus,1.046002458,ZLow Abundance
+Vulgatibacter,-14.044,9.967,0.031514396,0.094278917,Depleted,Vulgatibacter,1.501491012,ZLow Abundance
+Desulfomonile,-0.937,9.966,0.170910202,0.399817801,NotSig,Desulfomonile,0.767232013,ZLow Abundance
+Syntrophus,-4.448,11.288,2.25E-13,4.46E-12,Depleted,Syntrophus,12.64781748,ZLow Abundance
+Desulfosoma,-4.565,11.773,6.95E-14,1.46E-12,Depleted,Desulfosoma,13.1580152,ZLow Abundance
+Desulfoglaeba,-3.659,12.135,6.61E-13,1.22E-11,Depleted,Desulfoglaeba,12.17979854,ZLow Abundance
+Syntrophobacter,-12.723,8.967,0.130123471,0.314726985,NotSig,Syntrophobacter,0.885644361,ZLow Abundance
+Desulfacinum,-15.81,10.551,2.21E-05,0.000144641,Depleted,Desulfacinum,4.655607726,ZLow Abundance
+Arcobacter,13.108,10.551,0.354056992,0.667865844,NotSig,Arcobacter,0.450926825,ZLow Abundance
+Dehalospirillum,11.522,8.965,0.354056992,0.667865844,NotSig,Dehalospirillum,0.450926825,ZLow Abundance
+Helicobacter,11.523,8.966,0.354056992,0.667865844,NotSig,Helicobacter,0.450926825,ZLow Abundance
+Oligoflexus,-1.106,11.551,0.154969504,0.365523111,NotSig,Oligoflexus,0.809753757,ZLow Abundance
+Turneriella,1.386,10.966,0.826724516,1,NotSig,Turneriella,0.082639183,ZLow Abundance
+Leptonema,13.844,9.966,0.105759544,0.266173766,NotSig,Leptonema,0.97568043,ZLow Abundance
+Treponema,13.108,10.551,0.354056992,0.667865844,NotSig,Treponema,0.450926825,ZLow Abundance
+SR1_genera_incertae_sedis,11.523,8.966,0.354056992,0.667865844,NotSig,SR1_genera_incertae_sedis,0.450926825,ZLow Abundance
+Aminomonas,-2.235,12.426,1.90E-09,2.29E-08,Depleted,Aminomonas,8.721246399,ZLow Abundance
+Cloacibacillus,13.844,11.288,0.354056992,0.667865844,NotSig,Cloacibacillus,0.450926825,ZLow Abundance
+Acholeplasma,-4.107,11.773,5.44E-09,6.11E-08,Depleted,Acholeplasma,8.2644011,ZLow Abundance
+Anaeroplasma,22.853,17.688,1.02E-05,7.08E-05,Enriched,Anaeroplasma,4.991399828,ZLow Abundance
+Nitrososphaera,-1.169,18.866,0.633934208,1,NotSig,Nitrososphaera,0.197955812,ZLow Abundance
