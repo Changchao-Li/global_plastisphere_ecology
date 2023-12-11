@@ -6,4 +6,4 @@ In this study (Li et al., 2024, The Innovation), we present a global fingerprint
 
 If you use these scripts, please cite the paper below:
 
-Li, C., Gillings, M., Zhang, C., Chen, Q., Zhu, D., Wang, J., Zhao, K., Xu, Q., Leung, P., Li, X., Liu, J., Jin, L., Ecology and risks of the global plastisphere as a newly expanding microbial habitat, The Innovation (2024), doi: https://doi.org/10.1016/j.xinn.2023.100543.
+Li, C., Gillings, M., Zhang, C., Chen, Q., Zhu, D., Wang, J., Zhao, K., Xu, Q., Leung, P., Li, X., Liu, J., Jin, L., Ecology and risks of the global plastisphere as a newly expanding microbial habitat, The Innovation 2024, 5 (1), 100543.  https://doi.org/10.1016/j.xinn.2023.100543.
